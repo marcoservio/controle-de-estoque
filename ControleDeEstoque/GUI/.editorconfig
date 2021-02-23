@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# CS1690: Acessar um membro em um campo de uma classe de empacotamento por referência pode gerar uma exceção de tempo de execução
+dotnet_diagnostic.CS1690.severity = none

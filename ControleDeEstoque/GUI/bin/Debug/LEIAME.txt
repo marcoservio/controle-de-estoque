@@ -1,0 +1,35 @@
+**************************************
+*     Controle de Estoque  V1.1      *
+*     (c) 2016 por Marco Sérvio      *
+* LEIAME.TXT - Documento do software *
+**************************************
+
+1)  Ícone da Área de Trabalho
+
+	Caso perca o atalho do software (Controle de Estoque) da área de trabalho, ir na pasta onde foi instalado o software (Controle de Estoque) e criar um atalho do executável GUI. Caso não consiga me escreva.
+
+2) Ambiente da Aplicação
+
+	Software é responsável por controlar estoque de qualquer empresa que possui fluxo de matérias.
+
+Conta com:
+ Cadastro de Categoria, SubCategoria, Unidade de Media, Produto, Cliente, Fornecedor, Tipo de Pagamento. 
+ Consulta de Categoria, SubCategoria, Unidade de Media, Produto, Cliente, Fornecedor, Tipo de Pagamento.
+ Controle de movimentação de compra e venda. 
+ Pagamento de parcelas em aberto e Recebimento.
+
+Possuem algumas ferramentas como: 
+ Configuração do Banco de Dados, Backup do Bando de Dados, Calculadora, Explorer, Bloco de Notas, Word, Excel.
+
+3) Comentários e Observações Finais
+
+	Esse software surgiu de uma necessidade estudantil para um trabalho de ATP, foi feito com condições não muito favoráveis, era um programa pequeno, que foi aumentando, aumentando, aumentando.... Uma certa dose de estruturação permitiu que ficasse razoavelmente organizado até o final. Testamos. Testamos.  Testamos umas cem vezes (a lista dos que me ajudaram a testar é grande...).  Achamos um sem-número de "paus", e eu consertei tudo, na medida do possível. Só que sempre sobra algo. De qualquer forma, se surgirem problemas, por favor me escrevam.
+
+ 	De qualquer forma, espero que alguém goste. Este é um programa de domínio privado, e não pode ser distribuído livremente. Não vou cobrar taxa de registro, pois não estamos tão profissionais assim. Se você gostou do software, e quiser contribuir para com o autor, não precisa mandar dinheiro. Grave alguns programas legais em um disquete, e mande para mim, que eu já fico muito feliz. É claro que se você tiver uns US$ 1000 sobrando e quiser me mandar, eu não vou recusar...
+	
+        			De qualquer forma, mande suas sugestões, críticas e ofensas para:
+
+                			             Marco Sério
+                			       marcoservio22@hotmail.com
+
+ 		                                Aproveite o Software!

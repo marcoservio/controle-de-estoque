@@ -1,0 +1,4 @@
+localhost
+controle_de_estoque
+root
+
