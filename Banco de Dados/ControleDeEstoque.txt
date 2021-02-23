@@ -1,0 +1,208 @@
+CREATE DATABASE controlestoque;
+
+USE controlestoque;
+
+CREATE TABLE categoria (
+    cat_cod INT NOT NULL AUTO_INCREMENT,
+    cat_nome VARCHAR(95) NULL,
+    PRIMARY KEY (cat_cod)
+);
+
+CREATE TABLE cliente (
+    cli_cod INT NOT NULL AUTO_INCREMENT,
+    cli_nome VARCHAR(45) NULL,
+    cli_cpfcnpj VARCHAR(20) NULL,
+    cli_rgie VARCHAR(15) NULL,
+    cli_rsocial VARCHAR(45) NULL,
+    cli_tipo INT NULL,
+    cli_cep VARCHAR(9) NULL,
+    cli_endereco VARCHAR(95) NULL,
+    cli_bairro VARCHAR(40) NULL,
+    cli_fone VARCHAR(13) NULL,
+    cli_cel VARCHAR(14) NULL,
+    cli_email VARCHAR(50) NULL,
+    cli_endnumero INT NULL,
+    cli_cidade VARCHAR(50) NULL,
+    cli_estado VARCHAR(50) NULL,
+    PRIMARY KEY (cli_cod)
+);
+
+CREATE TABLE compra (
+    com_cod INT NOT NULL AUTO_INCREMENT,
+    com_data DATETIME NULL,
+    com_nfiscal INT NULL,
+    com_total DECIMAL(15 , 2 ) NULL,
+    com_nparcelas INT NULL,
+    com_status INT NULL,
+    for_cod INT NULL,
+    tpa_cod INT NULL,
+    PRIMARY KEY (com_cod)
+);
+
+CREATE TABLE parcelascompra (
+    pco_cod INT NOT NULL,
+    pco_valor DECIMAL(15 , 2 ) NULL,
+    pco_datapagto DATE NULL,
+    pco_datavecto DATE NULL,
+    com_cod INT NOT NULL,
+    PRIMARY KEY (pco_cod)
+);
+
+CREATE TABLE fornecedor (
+    for_cod INT NOT NULL AUTO_INCREMENT,
+    for_nome VARCHAR(45) NULL,
+    for_rsocial VARCHAR(45) NULL,
+    for_ie VARCHAR(15) NULL,
+    for_cnpj VARCHAR(20) NULL,
+    for_cep VARCHAR(9) NULL,
+    for_endereco VARCHAR(95) NULL,
+    for_bairro VARCHAR(95) NULL,
+    for_fone VARCHAR(13) NULL,
+    for_cel VARCHAR(14) NULL,
+    for_email VARCHAR(50) NULL,
+    for_endnumero INT NULL,
+    for_cidade VARCHAR(45) NULL,
+    for_estado VARCHAR(45) NULL,
+    PRIMARY KEY (for_cod)
+);
+
+CREATE TABLE produto (
+    pro_cod INT NOT NULL AUTO_INCREMENT,
+    pro_nome VARCHAR(45) NULL,
+    pro_descricao TEXT NULL,
+    pro_valorpago DECIMAL(15 , 2 ) NULL,
+    pro_valorvenda DECIMAL(15 , 2 ) NULL,
+    pro_qtde FLOAT NULL,
+    umed_cod INT NULL,
+    cat_cod INT NULL,
+    scat_cod INT NULL,
+    PRIMARY KEY (pro_cod)
+);
+
+CREATE TABLE itenscompra (
+    itc_cod INT NOT NULL,
+    itc_qtde FLOAT NULL,
+    itc_valor DECIMAL(15 , 2 ) NULL,
+    com_cod INT NOT NULL,
+    pro_cod INT NOT NULL,
+    PRIMARY KEY (itc_cod)
+);
+
+CREATE TABLE subcategoria (
+    scat_cod INT NOT NULL AUTO_INCREMENT,
+    scat_nome VARCHAR(95) NULL,
+    cat_cod INT NULL,
+    PRIMARY KEY (scat_cod)
+);
+
+CREATE TABLE tipopagamento (
+    tpa_cod INT NOT NULL AUTO_INCREMENT,
+    tpa_nome VARCHAR(35) NULL,
+    PRIMARY KEY (tpa_cod)
+);
+
+CREATE TABLE undmedida (
+    umed_cod INT NOT NULL AUTO_INCREMENT,
+    umed_nome VARCHAR(35) NULL,
+    PRIMARY KEY (umed_cod)
+);
+
+CREATE TABLE venda (
+    ven_cod INT NOT NULL AUTO_INCREMENT,
+    ven_data DATETIME NULL,
+    ven_nfiscal INT NULL,
+    ven_total DECIMAL(15 , 2 ) NULL,
+    ven_nparcelas INT NULL,
+    ven_status INT NULL,
+    cli_cod INT NULL,
+    tpa_cod INT NULL,
+    PRIMARY KEY (ven_cod)
+);
+
+CREATE TABLE itensvenda (
+    itv_cod INT NOT NULL,
+    itv_qtde FLOAT NULL,
+    itv_valor DECIMAL(15 , 2 ) NULL,
+    ven_cod INT NOT NULL,
+    pro_cod INT NOT NULL,
+    PRIMARY KEY (itv_cod)
+);
+
+CREATE TABLE parcelasvenda (
+    ven_cod INT NOT NULL,
+    pve_cod INT NOT NULL,
+    pve_valor DECIMAL(15 , 2 ) NULL,
+    pve_datapagto DATE NULL,
+    pve_datavecto DATE NULL,
+    PRIMARY KEY (ven_cod)
+);
+
+ALTER TABLE compra
+	ADD CONSTRAINT R_21 FOREIGN KEY (for_cod) REFERENCES fornecedor(for_cod)
+				   ON DELETE NO ACTION
+				   ON UPDATE NO ACTION;
+
+ALTER TABLE compra
+	ADD CONSTRAINT R_24 FOREIGN KEY (tpa_cod) REFERENCES tipopagamento(tpa_cod)
+				   ON DELETE NO ACTION
+				   ON UPDATE NO ACTION;
+
+ALTER TABLE parcelascompra
+	ADD CONSTRAINT R_25 FOREIGN KEY (com_cod) REFERENCES compra(com_cod)
+				   ON DELETE NO ACTION
+				   ON UPDATE NO ACTION;
+
+ALTER TABLE produto
+	ADD CONSTRAINT R_9 FOREIGN KEY (umed_cod) REFERENCES undmedida(umed_cod)
+				   ON DELETE NO ACTION
+				   ON UPDATE NO ACTION;
+
+ALTER TABLE produto
+	ADD CONSTRAINT R_11 FOREIGN KEY (cat_cod) REFERENCES categoria(cat_cod)
+				   ON DELETE NO ACTION
+				   ON UPDATE NO ACTION;
+
+ALTER TABLE produto
+	ADD CONSTRAINT R_12 FOREIGN KEY (scat_cod) REFERENCES subcategoria(scat_cod)
+				   ON DELETE NO ACTION
+				   ON UPDATE NO ACTION;
+
+ALTER TABLE itenscompra
+	ADD CONSTRAINT R_15 FOREIGN KEY (com_cod) REFERENCES compra(com_cod)
+				   ON DELETE NO ACTION
+				   ON UPDATE NO ACTION;
+
+ALTER TABLE itenscompra
+	ADD CONSTRAINT R_17 FOREIGN KEY (pro_cod) REFERENCES produto(pro_cod)
+				   ON DELETE NO ACTION
+				   ON UPDATE NO ACTION;
+
+ALTER TABLE subcategoria
+	ADD CONSTRAINT R_10 FOREIGN KEY (cat_cod) REFERENCES categoria(cat_cod)
+				   ON DELETE NO ACTION
+				   ON UPDATE NO ACTION;
+
+ALTER TABLE venda
+	ADD CONSTRAINT R_20 FOREIGN KEY (cli_cod) REFERENCES cliente(cli_cod)
+				   ON DELETE NO ACTION
+				   ON UPDATE NO ACTION;
+
+ALTER TABLE venda
+	ADD CONSTRAINT R_23 FOREIGN KEY (tpa_cod) REFERENCES tipopagamento(tpa_cod)
+				   ON DELETE NO ACTION
+				   ON UPDATE NO ACTION;
+
+ALTER TABLE itensvenda
+	ADD CONSTRAINT R_13 FOREIGN KEY (ven_cod) REFERENCES venda(ven_cod)
+				   ON DELETE NO ACTION
+				   ON UPDATE NO ACTION;
+
+ALTER TABLE itensvenda
+	ADD CONSTRAINT R_14 FOREIGN KEY (pro_cod) REFERENCES produto(pro_cod)
+				   ON DELETE NO ACTION
+				   ON UPDATE NO ACTION;
+
+ALTER TABLE parcelasvenda
+	ADD CONSTRAINT R_22 FOREIGN KEY (ven_cod) REFERENCES venda(ven_cod)
+				   ON DELETE NO ACTION
+				   ON UPDATE NO ACTION;
