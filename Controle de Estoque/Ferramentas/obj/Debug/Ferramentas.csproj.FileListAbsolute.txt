@@ -1,0 +1,36 @@
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\Ferramentas\bin\Debug\Ferramentas.dll.config
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\Ferramentas\bin\Debug\Ferramentas.dll
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\Ferramentas\bin\Debug\Ferramentas.pdb
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\Ferramentas\bin\Debug\MySql.Data.dll
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\Ferramentas\bin\Debug\MySqlBackup.dll
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\Ferramentas\obj\Debug\Ferramentas.csprojResolveAssemblyReference.cache
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\Ferramentas\obj\Debug\Ferramentas.dll
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\Ferramentas\obj\Debug\Ferramentas.pdb
+C:\Marco\Controle de Estoque\ControleDeEstoque\Ferramentas\bin\Debug\Ferramentas.dll.config
+C:\Marco\Controle de Estoque\ControleDeEstoque\Ferramentas\bin\Debug\Ferramentas.dll
+C:\Marco\Controle de Estoque\ControleDeEstoque\Ferramentas\bin\Debug\Ferramentas.pdb
+C:\Marco\Controle de Estoque\ControleDeEstoque\Ferramentas\bin\Debug\MySql.Data.dll
+C:\Marco\Controle de Estoque\ControleDeEstoque\Ferramentas\bin\Debug\MySqlBackup.dll
+C:\Marco\Controle de Estoque\ControleDeEstoque\Ferramentas\obj\Debug\Ferramentas.csprojAssemblyReference.cache
+C:\Marco\Controle de Estoque\ControleDeEstoque\Ferramentas\obj\Debug\Ferramentas.csproj.CopyComplete
+C:\Marco\Controle de Estoque\ControleDeEstoque\Ferramentas\obj\Debug\Ferramentas.dll
+C:\Marco\Controle de Estoque\ControleDeEstoque\Ferramentas\obj\Debug\Ferramentas.pdb
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\Ferramentas\bin\Debug\Ferramentas.dll.config
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\Ferramentas\bin\Debug\Ferramentas.dll
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\Ferramentas\bin\Debug\Ferramentas.pdb
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\Ferramentas\bin\Debug\MySql.Data.dll
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\Ferramentas\bin\Debug\MySqlBackup.dll
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\Ferramentas\obj\Debug\Ferramentas.csprojAssemblyReference.cache
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\Ferramentas\obj\Debug\Ferramentas.csproj.CopyComplete
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\Ferramentas\obj\Debug\Ferramentas.dll
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\Ferramentas\obj\Debug\Ferramentas.pdb
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\Ferramentas\bin\Debug\Ferramentas.dll.config
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\Ferramentas\bin\Debug\Ferramentas.dll
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\Ferramentas\bin\Debug\Ferramentas.pdb
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\Ferramentas\bin\Debug\MySql.Data.dll
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\Ferramentas\bin\Debug\MySqlBackup.dll
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\Ferramentas\obj\Debug\Ferramentas.csproj.AssemblyReference.cache
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\Ferramentas\obj\Debug\Ferramentas.csproj.CoreCompileInputs.cache
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\Ferramentas\obj\Debug\Ferramentas.csproj.CopyComplete
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\Ferramentas\obj\Debug\Ferramentas.dll
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\Ferramentas\obj\Debug\Ferramentas.pdb

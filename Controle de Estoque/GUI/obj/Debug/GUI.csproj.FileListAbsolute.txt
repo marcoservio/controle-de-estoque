@@ -1,0 +1,314 @@
+C:\Users\Marco Sérvio\Desktop\ControleDeEstoque\GUI\bin\Debug\GUI.exe.config
+C:\Users\Marco Sérvio\Desktop\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\GUI.exe.config
+C:\Users\Marco Sérvio\Desktop\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\GUI.exe
+C:\Users\Marco Sérvio\Desktop\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\GUI.pdb
+C:\Users\Marco Sérvio\Desktop\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\BLL.dll
+C:\Users\Marco Sérvio\Desktop\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\DAL.dll
+C:\Users\Marco Sérvio\Desktop\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\Modelo.dll
+C:\Users\Marco Sérvio\Desktop\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\BLL.pdb
+C:\Users\Marco Sérvio\Desktop\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\DAL.pdb
+C:\Users\Marco Sérvio\Desktop\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\Modelo.pdb
+C:\Users\Marco Sérvio\Desktop\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
+C:\Users\Marco Sérvio\Desktop\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\Marco Sérvio\Desktop\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
+C:\Users\Marco Sérvio\Desktop\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.exe
+C:\Users\Marco Sérvio\Desktop\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.pdb
+C:\Users\Marco Sérvio\Desktop\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmPrincipal.resources
+C:\Users\Marco Sérvio\Desktop\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmModeloDeFormularioDeCadastro.resources
+C:\Users\Marco Sérvio\Desktop\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroCategoria.resources
+C:\Users\Marco Sérvio\Desktop\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\MySql.Data.dll
+C:\Users\Marco Sérvio\Desktop\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\MySql.Data.xml
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\GUI\bin\Debug\GUI.exe.config
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\GUI\bin\Debug\GUI.exe
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\GUI\bin\Debug\GUI.pdb
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\GUI\bin\Debug\BLL.dll
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\GUI\bin\Debug\DAL.dll
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\GUI\bin\Debug\Modelo.dll
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\GUI\bin\Debug\MySql.Data.dll
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\GUI\bin\Debug\BLL.pdb
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\GUI\bin\Debug\DAL.pdb
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\GUI\bin\Debug\Modelo.pdb
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\GUI\bin\Debug\MySql.Data.xml
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroCategoria.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaCategoria.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\GUI\obj\Debug\GUI.frmModeloDeFormularioDeCadastro.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\GUI\obj\Debug\GUI.frmPrincipal.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\GUI\obj\Debug\GUI.exe
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\GUI\obj\Debug\GUI.pdb
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroSubCategoria.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaSubCategoria.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroUnidadeDeMedida.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaUnidadeDeMedida.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\GUI.exe.config
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\GUI.exe
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\GUI.pdb
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\BLL.dll
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\DAL.dll
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\Ferramentas.dll
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\Modelo.dll
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\MySqlBackup.dll
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\BLL.pdb
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\DAL.pdb
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\Ferramentas.pdb
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\Modelo.pdb
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\MySql.Data.xml
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.csprojResolveAssemblyReference.cache
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroCliente.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroFornecedor.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroTipoPagamento.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmBackupBancoDeDados.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroCategoria.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroProduto.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroSubCategoria.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroUnidadeDeMedida.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaCategoria.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaCliente.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaCompra.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaFornecedor.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaProduto.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaSubCategoria.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaUnidadeDeMedida.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsutaTipoPagamento.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmModeloDeFormularioDeCadastro.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmMovimentacaoCompra.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmMovimentacaoVenda.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmMovimentacaoVendaFC.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmPagamentoCompra.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmPrincipal.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmSobre.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.csproj.GenerateResource.Cache
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.exe
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.pdb
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConfiguracaoBancoDados.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaVenda.resources
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\Ferramentas.dll.config
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.exe
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.pdb
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\GUI.exe.config
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\GUI.exe
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\GUI.pdb
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\BLL.dll
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\DAL.dll
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\Ferramentas.dll
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\Modelo.dll
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\MySqlBackup.dll
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\BLL.pdb
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\DAL.pdb
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\Ferramentas.pdb
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\Ferramentas.dll.config
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\Modelo.pdb
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\MySql.Data.xml
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroCliente.resources
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroFornecedor.resources
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroTipoPagamento.resources
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmBackupBancoDeDados.resources
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroCategoria.resources
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroProduto.resources
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroSubCategoria.resources
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroUnidadeDeMedida.resources
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConfiguracaoBancoDados.resources
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaCategoria.resources
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaCliente.resources
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaCompra.resources
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaFornecedor.resources
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaProduto.resources
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaSubCategoria.resources
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaUnidadeDeMedida.resources
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaVenda.resources
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsutaTipoPagamento.resources
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmModeloDeFormularioDeCadastro.resources
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmMovimentacaoCompra.resources
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmMovimentacaoVenda.resources
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmPagamentoCompra.resources
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmPrincipal.resources
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmSobre.resources
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\bin\Debug\GUI.exe.config
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\bin\Debug\GUI.exe
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\bin\Debug\GUI.pdb
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\bin\Debug\BLL.dll
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\bin\Debug\DAL.dll
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\bin\Debug\Ferramentas.dll
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\bin\Debug\Modelo.dll
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\bin\Debug\MySqlBackup.dll
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\bin\Debug\BLL.pdb
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\bin\Debug\DAL.pdb
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\bin\Debug\Ferramentas.pdb
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\bin\Debug\Ferramentas.dll.config
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\bin\Debug\Modelo.pdb
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\bin\Debug\MySql.Data.xml
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroCliente.resources
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroFornecedor.resources
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroTipoPagamento.resources
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmBackupBancoDeDados.resources
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroCategoria.resources
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroProduto.resources
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroSubCategoria.resources
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroUnidadeDeMedida.resources
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConfiguracaoBancoDados.resources
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaCategoria.resources
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaCliente.resources
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaCompra.resources
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaFornecedor.resources
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaProduto.resources
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaSubCategoria.resources
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaUnidadeDeMedida.resources
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaVenda.resources
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsutaTipoPagamento.resources
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmModeloDeFormularioDeCadastro.resources
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmMovimentacaoCompra.resources
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmMovimentacaoVenda.resources
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmPagamentoCompra.resources
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmPrincipal.resources
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmSobre.resources
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.exe
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.pdb
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\bin\Debug\GUI.exe.config
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\bin\Debug\GUI.exe
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\bin\Debug\GUI.pdb
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\bin\Debug\BLL.dll
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\bin\Debug\DAL.dll
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\bin\Debug\Ferramentas.dll
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\bin\Debug\Modelo.dll
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\bin\Debug\MySqlBackup.dll
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\bin\Debug\BLL.pdb
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\bin\Debug\DAL.pdb
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\bin\Debug\Ferramentas.pdb
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\bin\Debug\Ferramentas.dll.config
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\bin\Debug\Modelo.pdb
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\bin\Debug\MySql.Data.xml
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.csproj.SuggestedBindingRedirects.cache
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroCliente.resources
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroFornecedor.resources
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroTipoPagamento.resources
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmBackupBancoDeDados.resources
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroCategoria.resources
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroProduto.resources
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroSubCategoria.resources
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroUnidadeDeMedida.resources
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConfiguracaoBancoDados.resources
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaCategoria.resources
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaCliente.resources
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaCompra.resources
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaFornecedor.resources
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaProduto.resources
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaSubCategoria.resources
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaUnidadeDeMedida.resources
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaVenda.resources
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsutaTipoPagamento.resources
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmModeloDeFormularioDeCadastro.resources
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmMovimentacaoCompra.resources
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmMovimentacaoVenda.resources
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmPagamentoCompra.resources
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmPrincipal.resources
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmSobre.resources
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.Properties.Resources.resources
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.csproj.CopyComplete
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.exe
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\GUI\obj\Debug\GUI.pdb
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\GUI.exe.config
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\GUI.exe
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\GUI.pdb
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\BLL.dll
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\DAL.dll
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\Ferramentas.dll
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\Modelo.dll
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\MySqlBackup.dll
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\BLL.pdb
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\DAL.pdb
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\Ferramentas.pdb
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\Ferramentas.dll.config
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\Modelo.pdb
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\MySql.Data.xml
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.csproj.SuggestedBindingRedirects.cache
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroCliente.resources
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroFornecedor.resources
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroTipoPagamento.resources
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmBackupBancoDeDados.resources
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroCategoria.resources
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroProduto.resources
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroSubCategoria.resources
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroUnidadeDeMedida.resources
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConfiguracaoBancoDados.resources
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaCategoria.resources
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaCliente.resources
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaCompra.resources
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaFornecedor.resources
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaProduto.resources
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaSubCategoria.resources
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaUnidadeDeMedida.resources
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaVenda.resources
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsutaTipoPagamento.resources
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmModeloDeFormularioDeCadastro.resources
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmMovimentacaoCompra.resources
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmMovimentacaoVenda.resources
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmPagamentoCompra.resources
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmPrincipal.resources
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmSobre.resources
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.Properties.Resources.resources
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.csproj.CopyComplete
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.exe
+D:\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.pdb
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\GUI.exe.config
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\GUI.exe
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\GUI.pdb
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\BLL.dll
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\DAL.dll
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\Ferramentas.dll
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\Modelo.dll
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\MySqlBackup.dll
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\BLL.pdb
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\DAL.pdb
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\Ferramentas.pdb
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\Ferramentas.dll.config
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\Modelo.pdb
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\bin\Debug\MySql.Data.xml
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.csproj.SuggestedBindingRedirects.cache
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroCliente.resources
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroFornecedor.resources
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroTipoPagamento.resources
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmBackupBancoDeDados.resources
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroCategoria.resources
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroProduto.resources
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroSubCategoria.resources
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmCadastroUnidadeDeMedida.resources
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConfiguracaoBancoDados.resources
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaCategoria.resources
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaCliente.resources
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaCompra.resources
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaFornecedor.resources
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaProduto.resources
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaSubCategoria.resources
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaUnidadeDeMedida.resources
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsultaVenda.resources
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmConsutaTipoPagamento.resources
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmModeloDeFormularioDeCadastro.resources
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmMovimentacaoCompra.resources
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmMovimentacaoVenda.resources
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmPagamentoCompra.resources
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmPrincipal.resources
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.frmSobre.resources
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.exe
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\GUI\obj\Debug\GUI.pdb

@@ -1,0 +1,32 @@
+C:\Users\Marco Sérvio\Desktop\Controle de Estoque\ControleDeEstoque\Modelo\bin\Debug\Modelo.dll
+C:\Users\Marco Sérvio\Desktop\Controle de Estoque\ControleDeEstoque\Modelo\bin\Debug\Modelo.pdb
+C:\Users\Marco Sérvio\Desktop\Controle de Estoque\ControleDeEstoque\Modelo\obj\Debug\Modelo.csprojResolveAssemblyReference.cache
+C:\Users\Marco Sérvio\Desktop\Controle de Estoque\ControleDeEstoque\Modelo\obj\Debug\Modelo.dll
+C:\Users\Marco Sérvio\Desktop\Controle de Estoque\ControleDeEstoque\Modelo\obj\Debug\Modelo.pdb
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\Modelo\bin\Debug\Modelo.dll
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\Modelo\bin\Debug\Modelo.pdb
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\Modelo\obj\Debug\Modelo.csprojResolveAssemblyReference.cache
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\Modelo\obj\Debug\Modelo.dll
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\Modelo\obj\Debug\Modelo.pdb
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\Modelo\bin\Debug\Modelo.dll
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\Modelo\bin\Debug\Modelo.pdb
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\Modelo\obj\Debug\Modelo.dll
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\Modelo\obj\Debug\Modelo.pdb
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\Modelo\obj\Debug\Modelo.csprojResolveAssemblyReference.cache
+C:\Marco\Controle de Estoque\ControleDeEstoque\Modelo\bin\Debug\Modelo.dll
+C:\Marco\Controle de Estoque\ControleDeEstoque\Modelo\bin\Debug\Modelo.pdb
+C:\Marco\Controle de Estoque\ControleDeEstoque\Modelo\obj\Debug\Modelo.csprojAssemblyReference.cache
+C:\Marco\Controle de Estoque\ControleDeEstoque\Modelo\obj\Debug\Modelo.dll
+C:\Marco\Controle de Estoque\ControleDeEstoque\Modelo\obj\Debug\Modelo.pdb
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\Modelo\bin\Debug\Modelo.dll
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\Modelo\bin\Debug\Modelo.pdb
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\Modelo\obj\Debug\Modelo.csproj.AssemblyReference.cache
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\Modelo\obj\Debug\Modelo.dll
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\Modelo\obj\Debug\Modelo.pdb
+D:\Marco\Controle de Estoque\ControleDeEstoque\Modelo\bin\Debug\Modelo.dll
+D:\Marco\Controle de Estoque\ControleDeEstoque\Modelo\bin\Debug\Modelo.pdb
+D:\Marco\Controle de Estoque\ControleDeEstoque\Modelo\obj\Debug\Modelo.csproj.AssemblyReference.cache
+D:\Marco\Controle de Estoque\ControleDeEstoque\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+D:\Marco\Controle de Estoque\ControleDeEstoque\Modelo\obj\Debug\Modelo.dll
+D:\Marco\Controle de Estoque\ControleDeEstoque\Modelo\obj\Debug\Modelo.pdb

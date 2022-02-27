@@ -1,0 +1,74 @@
+C:\Users\Marco Sérvio\Desktop\Controle de Estoque\ControleDeEstoque\DAL\bin\Debug\DAL.dll
+C:\Users\Marco Sérvio\Desktop\Controle de Estoque\ControleDeEstoque\DAL\bin\Debug\DAL.pdb
+C:\Users\Marco Sérvio\Desktop\Controle de Estoque\ControleDeEstoque\DAL\bin\Debug\Modelo.dll
+C:\Users\Marco Sérvio\Desktop\Controle de Estoque\ControleDeEstoque\DAL\bin\Debug\Modelo.pdb
+C:\Users\Marco Sérvio\Desktop\Controle de Estoque\ControleDeEstoque\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Marco Sérvio\Desktop\Controle de Estoque\ControleDeEstoque\DAL\obj\Debug\DAL.dll
+C:\Users\Marco Sérvio\Desktop\Controle de Estoque\ControleDeEstoque\DAL\obj\Debug\DAL.pdb
+C:\Users\Marco Sérvio\Desktop\Controle de Estoque\ControleDeEstoque\DAL\bin\Debug\MySql.Data.dll
+C:\Users\Marco Sérvio\Desktop\Controle de Estoque\ControleDeEstoque\DAL\bin\Debug\MySql.Data.xml
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\DAL\bin\Debug\DAL.dll
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\DAL\bin\Debug\DAL.pdb
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\DAL\bin\Debug\Modelo.dll
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\DAL\bin\Debug\MySql.Data.dll
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\DAL\bin\Debug\Modelo.pdb
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\DAL\bin\Debug\MySql.Data.xml
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\DAL\obj\Debug\DAL.dll
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\DAL\obj\Debug\DAL.pdb
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\Projeto\ControleDeEstoque\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\DAL\bin\Debug\DAL.dll
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\DAL\bin\Debug\DAL.pdb
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\DAL\bin\Debug\Modelo.dll
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\DAL\bin\Debug\Modelo.pdb
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\DAL\bin\Debug\MySql.Data.xml
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\DAL\obj\Debug\DAL.dll
+C:\Users\Marco Sérvio\OneDrive\Controle de Estoque\ControleDeEstoque\DAL\obj\Debug\DAL.pdb
+C:\Marco\Controle de Estoque\ControleDeEstoque\DAL\bin\Debug\DAL.dll
+C:\Marco\Controle de Estoque\ControleDeEstoque\DAL\bin\Debug\DAL.pdb
+C:\Marco\Controle de Estoque\ControleDeEstoque\DAL\bin\Debug\Modelo.dll
+C:\Marco\Controle de Estoque\ControleDeEstoque\DAL\bin\Debug\Modelo.pdb
+C:\Marco\Controle de Estoque\ControleDeEstoque\DAL\bin\Debug\MySql.Data.xml
+C:\Marco\Controle de Estoque\ControleDeEstoque\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Marco\Controle de Estoque\ControleDeEstoque\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Marco\Controle de Estoque\ControleDeEstoque\DAL\obj\Debug\DAL.dll
+C:\Marco\Controle de Estoque\ControleDeEstoque\DAL\obj\Debug\DAL.pdb
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\DAL\bin\Debug\DAL.dll
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\DAL\bin\Debug\DAL.pdb
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\DAL\bin\Debug\Modelo.dll
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\DAL\bin\Debug\Modelo.pdb
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\DAL\bin\Debug\MySql.Data.xml
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\DAL\obj\Debug\DAL.dll
+C:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\DAL\obj\Debug\DAL.pdb
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\DAL\bin\Debug\DAL.dll
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\DAL\bin\Debug\DAL.pdb
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\DAL\bin\Debug\Modelo.dll
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\DAL\bin\Debug\Modelo.pdb
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\DAL\bin\Debug\MySql.Data.xml
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\DAL\obj\Debug\DAL.dll
+D:\Marco\Projetos\controle-de-estoque\ControleDeEstoque\DAL\obj\Debug\DAL.pdb
+D:\Marco\Controle de Estoque\ControleDeEstoque\DAL\bin\Debug\DAL.dll
+D:\Marco\Controle de Estoque\ControleDeEstoque\DAL\bin\Debug\DAL.pdb
+D:\Marco\Controle de Estoque\ControleDeEstoque\DAL\bin\Debug\Modelo.dll
+D:\Marco\Controle de Estoque\ControleDeEstoque\DAL\bin\Debug\Modelo.pdb
+D:\Marco\Controle de Estoque\ControleDeEstoque\DAL\bin\Debug\MySql.Data.xml
+D:\Marco\Controle de Estoque\ControleDeEstoque\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\Marco\Controle de Estoque\ControleDeEstoque\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Marco\Controle de Estoque\ControleDeEstoque\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Marco\Controle de Estoque\ControleDeEstoque\DAL\obj\Debug\DAL.dll
+D:\Marco\Controle de Estoque\ControleDeEstoque\DAL\obj\Debug\DAL.pdb
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\DAL\bin\Debug\DAL.dll
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\DAL\bin\Debug\DAL.pdb
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\DAL\bin\Debug\Modelo.dll
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\DAL\bin\Debug\Modelo.pdb
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\DAL\bin\Debug\MySql.Data.xml
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\DAL\obj\Debug\DAL.dll
+C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\DAL\obj\Debug\DAL.pdb
