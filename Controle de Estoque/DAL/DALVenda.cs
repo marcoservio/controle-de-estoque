@@ -92,25 +92,25 @@ namespace DAL
 
             try
             {
+                //0 - Venda Ativa / 1 - Venda Inativa
                 cmd.Transaction = conexao.ObjetoTransacao;
-                cmd.CommandText = "UPDATE venda SET ven_status = 0 WHERE ven_cod = ?codigo;";
+                cmd.CommandText = "UPDATE venda SET ven_status = 1 WHERE ven_cod = ?codigo;";
                 cmd.Parameters.Add(new MySqlParameter("codigo", codigo));
 
                 cmd.ExecuteNonQuery();
 
                 DataTable tabela = new DataTable();
-                MySqlDataAdapter da = new MySqlDataAdapter("SELECT pro_cod, itv_qtde FROM itensvenda produto where ven_cod = " + codigo.ToString(), conexao.StringConexao);
+                MySqlDataAdapter da = new MySqlDataAdapter("SELECT pro_cod, itv_qtde FROM itensvenda WHERE ven_cod = " + codigo.ToString(), conexao.StringConexao);
                 da.Fill(tabela);
+                //da.Dispose();
 
                 ModeloProduto produto;
                 DALProduto dalProduto = new DALProduto(conexao);
 
                 for(int i = 0; i < tabela.Rows.Count; i++)
                 {
-                    produto = dalProduto.CarregaModeloProduto(Convert.ToInt32(tabela.Rows[i]["pro_cod"]));
-
+                    produto = dalProduto.CarregaModeloProduto(Convert.ToInt32(tabela.Rows[i]["pro_cod"]), true);
                     produto.Pro_Qtde = produto.Pro_Qtde + Convert.ToInt32(tabela.Rows[i]["itv_qtde"]);
-
                     dalProduto.Alterar(produto, true);
                 }
 

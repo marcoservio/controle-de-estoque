@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dtgParcelas_ConsultaCom = new System.Windows.Forms.DataGridView();
-            this.dtgItens_ConsultaCom = new System.Windows.Forms.DataGridView();
+            this.dtgParcelas_ConsultaVenda = new System.Windows.Forms.DataGridView();
+            this.dtgItens_ConsultaVenda = new System.Windows.Forms.DataGridView();
             this.tbpAbaVenda = new System.Windows.Forms.TabPage();
             this.dtgDados_ConsultaVenda = new System.Windows.Forms.DataGridView();
             this.tbpAbaItens = new System.Windows.Forms.TabPage();
@@ -51,8 +51,8 @@
             this.tbcDados_ConsultaCom = new System.Windows.Forms.TabControl();
             this.pnlData = new System.Windows.Forms.Panel();
             this.gpbConsultaPor_ConsultaCom = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgParcelas_ConsultaCom)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgItens_ConsultaCom)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgParcelas_ConsultaVenda)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgItens_ConsultaVenda)).BeginInit();
             this.tbpAbaVenda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgDados_ConsultaVenda)).BeginInit();
             this.tbpAbaItens.SuspendLayout();
@@ -63,29 +63,29 @@
             this.gpbConsultaPor_ConsultaCom.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dtgParcelas_ConsultaCom
+            // dtgParcelas_ConsultaVenda
             // 
-            this.dtgParcelas_ConsultaCom.AllowUserToAddRows = false;
-            this.dtgParcelas_ConsultaCom.AllowUserToDeleteRows = false;
-            this.dtgParcelas_ConsultaCom.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgParcelas_ConsultaCom.Location = new System.Drawing.Point(3, 3);
-            this.dtgParcelas_ConsultaCom.Name = "dtgParcelas_ConsultaCom";
-            this.dtgParcelas_ConsultaCom.ReadOnly = true;
-            this.dtgParcelas_ConsultaCom.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgParcelas_ConsultaCom.Size = new System.Drawing.Size(746, 407);
-            this.dtgParcelas_ConsultaCom.TabIndex = 13;
+            this.dtgParcelas_ConsultaVenda.AllowUserToAddRows = false;
+            this.dtgParcelas_ConsultaVenda.AllowUserToDeleteRows = false;
+            this.dtgParcelas_ConsultaVenda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgParcelas_ConsultaVenda.Location = new System.Drawing.Point(3, 3);
+            this.dtgParcelas_ConsultaVenda.Name = "dtgParcelas_ConsultaVenda";
+            this.dtgParcelas_ConsultaVenda.ReadOnly = true;
+            this.dtgParcelas_ConsultaVenda.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgParcelas_ConsultaVenda.Size = new System.Drawing.Size(746, 407);
+            this.dtgParcelas_ConsultaVenda.TabIndex = 13;
             // 
-            // dtgItens_ConsultaCom
+            // dtgItens_ConsultaVenda
             // 
-            this.dtgItens_ConsultaCom.AllowUserToAddRows = false;
-            this.dtgItens_ConsultaCom.AllowUserToDeleteRows = false;
-            this.dtgItens_ConsultaCom.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgItens_ConsultaCom.Location = new System.Drawing.Point(3, 3);
-            this.dtgItens_ConsultaCom.Name = "dtgItens_ConsultaCom";
-            this.dtgItens_ConsultaCom.ReadOnly = true;
-            this.dtgItens_ConsultaCom.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgItens_ConsultaCom.Size = new System.Drawing.Size(746, 407);
-            this.dtgItens_ConsultaCom.TabIndex = 13;
+            this.dtgItens_ConsultaVenda.AllowUserToAddRows = false;
+            this.dtgItens_ConsultaVenda.AllowUserToDeleteRows = false;
+            this.dtgItens_ConsultaVenda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgItens_ConsultaVenda.Location = new System.Drawing.Point(3, 3);
+            this.dtgItens_ConsultaVenda.Name = "dtgItens_ConsultaVenda";
+            this.dtgItens_ConsultaVenda.ReadOnly = true;
+            this.dtgItens_ConsultaVenda.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgItens_ConsultaVenda.Size = new System.Drawing.Size(746, 407);
+            this.dtgItens_ConsultaVenda.TabIndex = 13;
             // 
             // tbpAbaVenda
             // 
@@ -110,10 +110,11 @@
             this.dtgDados_ConsultaVenda.Size = new System.Drawing.Size(746, 407);
             this.dtgDados_ConsultaVenda.TabIndex = 12;
             this.dtgDados_ConsultaVenda.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgDados_ConsultaVenda_CellClick);
+            this.dtgDados_ConsultaVenda.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgDados_ConsultaVenda_CellDoubleClick);
             // 
             // tbpAbaItens
             // 
-            this.tbpAbaItens.Controls.Add(this.dtgItens_ConsultaCom);
+            this.tbpAbaItens.Controls.Add(this.dtgItens_ConsultaVenda);
             this.tbpAbaItens.Location = new System.Drawing.Point(4, 22);
             this.tbpAbaItens.Name = "tbpAbaItens";
             this.tbpAbaItens.Padding = new System.Windows.Forms.Padding(3);
@@ -202,7 +203,7 @@
             // 
             // tbpAbaParcelas
             // 
-            this.tbpAbaParcelas.Controls.Add(this.dtgParcelas_ConsultaCom);
+            this.tbpAbaParcelas.Controls.Add(this.dtgParcelas_ConsultaVenda);
             this.tbpAbaParcelas.Location = new System.Drawing.Point(4, 22);
             this.tbpAbaParcelas.Name = "tbpAbaParcelas";
             this.tbpAbaParcelas.Padding = new System.Windows.Forms.Padding(3);
@@ -319,8 +320,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta de Venda";
             this.Load += new System.EventHandler(this.frmConsultaVenda_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgParcelas_ConsultaCom)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgItens_ConsultaCom)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgParcelas_ConsultaVenda)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgItens_ConsultaVenda)).EndInit();
             this.tbpAbaVenda.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgDados_ConsultaVenda)).EndInit();
             this.tbpAbaItens.ResumeLayout(false);
@@ -338,8 +339,8 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dtgParcelas_ConsultaCom;
-        private System.Windows.Forms.DataGridView dtgItens_ConsultaCom;
+        private System.Windows.Forms.DataGridView dtgParcelas_ConsultaVenda;
+        private System.Windows.Forms.DataGridView dtgItens_ConsultaVenda;
         private System.Windows.Forms.TabPage tbpAbaVenda;
         private System.Windows.Forms.DataGridView dtgDados_ConsultaVenda;
         private System.Windows.Forms.TabPage tbpAbaItens;
@@ -358,8 +359,8 @@
         private System.Windows.Forms.RadioButton rdbParcelas_ConsultaVenda;
         private System.Windows.Forms.RadioButton rdbData_ConsultaVenda;
         private System.Windows.Forms.RadioButton rdbCliente_ConsultaVenda;
-        private System.Windows.Forms.TabControl tbcDados_ConsultaCom;
         private System.Windows.Forms.Panel pnlData;
         private System.Windows.Forms.GroupBox gpbConsultaPor_ConsultaCom;
+        private System.Windows.Forms.TabControl tbcDados_ConsultaCom;
     }
 }

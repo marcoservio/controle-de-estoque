@@ -59,7 +59,7 @@
             this.txtTotalVenda = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.dtpDataCompra = new System.Windows.Forms.DateTimePicker();
+            this.dtpDataVenda = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNfiscal = new System.Windows.Forms.TextBox();
             this.txtVenCod = new System.Windows.Forms.TextBox();
@@ -79,6 +79,7 @@
             this.pcoCod = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pcoValor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pcoDataVecto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblMsgVenda = new System.Windows.Forms.Label();
             this.pnlDados.SuspendLayout();
             this.pnlBotoes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItensVenda)).BeginInit();
@@ -88,6 +89,7 @@
             // 
             // pnlDados
             // 
+            this.pnlDados.Controls.Add(this.lblMsgVenda);
             this.pnlDados.Controls.Add(this.label15);
             this.pnlDados.Controls.Add(this.chkVenAvista);
             this.pnlDados.Controls.Add(this.label14);
@@ -116,7 +118,7 @@
             this.pnlDados.Controls.Add(this.txtTotalVenda);
             this.pnlDados.Controls.Add(this.label4);
             this.pnlDados.Controls.Add(this.label3);
-            this.pnlDados.Controls.Add(this.dtpDataCompra);
+            this.pnlDados.Controls.Add(this.dtpDataVenda);
             this.pnlDados.Controls.Add(this.label2);
             this.pnlDados.Controls.Add(this.txtNfiscal);
             this.pnlDados.Controls.Add(this.txtVenCod);
@@ -142,10 +144,12 @@
             // btnExcluir
             // 
             this.btnExcluir.Location = new System.Drawing.Point(354, 15);
+            this.btnExcluir.Text = "Cancelar Venda";
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnAlterar
             // 
+            this.btnAlterar.Enabled = false;
             this.btnAlterar.Location = new System.Drawing.Point(247, 15);
             this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
@@ -335,7 +339,7 @@
             this.dgvItensVenda.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvItensVenda.Size = new System.Drawing.Size(767, 227);
             this.dgvItensVenda.TabIndex = 45;
-            this.dgvItensVenda.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvItensCompra_CellDoubleClick);
+            this.dgvItensVenda.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvItensVenda_CellDoubleClick);
             // 
             // proCod
             // 
@@ -456,16 +460,16 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(526, 7);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 13);
+            this.label3.Size = new System.Drawing.Size(78, 13);
             this.label3.TabIndex = 36;
-            this.label3.Text = "Data da compra";
+            this.label3.Text = "Data da venda";
             // 
-            // dtpDataCompra
+            // dtpDataVenda
             // 
-            this.dtpDataCompra.Location = new System.Drawing.Point(529, 24);
-            this.dtpDataCompra.Name = "dtpDataCompra";
-            this.dtpDataCompra.Size = new System.Drawing.Size(240, 20);
-            this.dtpDataCompra.TabIndex = 35;
+            this.dtpDataVenda.Location = new System.Drawing.Point(529, 24);
+            this.dtpDataVenda.Name = "dtpDataVenda";
+            this.dtpDataVenda.Size = new System.Drawing.Size(240, 20);
+            this.dtpDataVenda.TabIndex = 35;
             // 
             // label2
             // 
@@ -658,17 +662,29 @@
             this.pcoDataVecto.ReadOnly = true;
             this.pcoDataVecto.Width = 200;
             // 
+            // lblMsgVenda
+            // 
+            this.lblMsgVenda.AutoSize = true;
+            this.lblMsgVenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMsgVenda.ForeColor = System.Drawing.Color.Red;
+            this.lblMsgVenda.Location = new System.Drawing.Point(172, 269);
+            this.lblMsgVenda.Name = "lblMsgVenda";
+            this.lblMsgVenda.Size = new System.Drawing.Size(423, 55);
+            this.lblMsgVenda.TabIndex = 64;
+            this.lblMsgVenda.Text = "Venda Cancelada";
+            this.lblMsgVenda.Visible = false;
+            // 
             // frmMovimentacaoVenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(788, 561);
+            this.ClientSize = new System.Drawing.Size(789, 561);
             this.Controls.Add(this.pnlFinalizaCompra);
             this.Name = "frmMovimentacaoVenda";
             this.Text = "Movimentação - Formulario de Venda";
             this.Load += new System.EventHandler(this.frmMovimentacaoVenda_Load);
             this.Controls.SetChildIndex(this.pnlDados, 0);
-            this.Controls.SetChildIndex(this.pnlBotoes, 0);
             this.Controls.SetChildIndex(this.pnlFinalizaCompra, 0);
+            this.Controls.SetChildIndex(this.pnlBotoes, 0);
             this.pnlDados.ResumeLayout(false);
             this.pnlDados.PerformLayout();
             this.pnlBotoes.ResumeLayout(false);
@@ -713,7 +729,7 @@
         private System.Windows.Forms.TextBox txtTotalVenda;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker dtpDataCompra;
+        private System.Windows.Forms.DateTimePicker dtpDataVenda;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNfiscal;
         private System.Windows.Forms.TextBox txtVenCod;
@@ -733,5 +749,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn pcoCod;
         private System.Windows.Forms.DataGridViewTextBoxColumn pcoValor;
         private System.Windows.Forms.DataGridViewTextBoxColumn pcoDataVecto;
+        private System.Windows.Forms.Label lblMsgVenda;
     }
 }

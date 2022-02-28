@@ -72,3 +72,13 @@ C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\DAL\obj\Debu
 C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\DAL\obj\Debug\DAL.dll
 C:\Users\marco\OneDrive\Marco\Controle de Estoque\ControleDeEstoque\DAL\obj\Debug\DAL.pdb
+C:\Users\marco\OneDrive\git-marcoservio\controle-de-estoque\Controle de Estoque\DAL\bin\Debug\DAL.dll
+C:\Users\marco\OneDrive\git-marcoservio\controle-de-estoque\Controle de Estoque\DAL\bin\Debug\DAL.pdb
+C:\Users\marco\OneDrive\git-marcoservio\controle-de-estoque\Controle de Estoque\DAL\bin\Debug\Modelo.dll
+C:\Users\marco\OneDrive\git-marcoservio\controle-de-estoque\Controle de Estoque\DAL\bin\Debug\Modelo.pdb
+C:\Users\marco\OneDrive\git-marcoservio\controle-de-estoque\Controle de Estoque\DAL\bin\Debug\MySql.Data.xml
+C:\Users\marco\OneDrive\git-marcoservio\controle-de-estoque\Controle de Estoque\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\marco\OneDrive\git-marcoservio\controle-de-estoque\Controle de Estoque\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\marco\OneDrive\git-marcoservio\controle-de-estoque\Controle de Estoque\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\marco\OneDrive\git-marcoservio\controle-de-estoque\Controle de Estoque\DAL\obj\Debug\DAL.dll
+C:\Users\marco\OneDrive\git-marcoservio\controle-de-estoque\Controle de Estoque\DAL\obj\Debug\DAL.pdb

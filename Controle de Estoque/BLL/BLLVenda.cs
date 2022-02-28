@@ -230,7 +230,7 @@ namespace BLL
         }
 
 
-        public ModeloCompra CarregaModeloCompra(int codigo)
+        public ModeloVenda CarregaModeloVenda(int codigo)
         {
             try
             {
@@ -239,9 +239,9 @@ namespace BLL
                     throw new Exception("O código deve ser informado!");
                 }
 
-                DALCompra dalObj = new DALCompra(conexao);
+                DALVenda dalObj = new DALVenda(conexao);
 
-                return dalObj.CarregaModeloCompra(codigo);
+                return dalObj.CarregaModeloVenda(codigo);
             }
             catch (Exception ex)
             {

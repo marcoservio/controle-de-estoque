@@ -16,6 +16,12 @@ namespace GUI
 {
     public partial class frmConsultaVenda : Form
     {
+        #region //Variaveis
+
+        public int codigo = 0;
+
+        #endregion
+
         public frmConsultaVenda()
         {
             InitializeComponent();
@@ -111,36 +117,40 @@ namespace GUI
                         }
                     case 3:
                         {
-                            dtgItens_ConsultaCom.Columns[1].HeaderText = "Quantidade";
-                            dtgItens_ConsultaCom.Columns[1].Width = 120;
-                            dtgItens_ConsultaCom.Columns[2].HeaderText = "Valor";
-                            dtgItens_ConsultaCom.Columns[2].Width = 120;
-                            dtgItens_ConsultaCom.Columns[3].HeaderText = "Código Venda";
-                            dtgItens_ConsultaCom.Columns[3].Width = 120;
-                            dtgItens_ConsultaCom.Columns[4].HeaderText = "Código Produto";
-                            dtgItens_ConsultaCom.Columns[4].Width = 120;
-                            dtgItens_ConsultaCom.Columns[5].HeaderText = "Nome do Produto";
-                            dtgItens_ConsultaCom.Columns[5].Width = 300;
+                            dtgItens_ConsultaVenda.Columns[0].HeaderText = "Codigo Itens Venda";
+                            dtgItens_ConsultaVenda.Columns[0].Width = 120;
+                            dtgItens_ConsultaVenda.Columns[1].HeaderText = "Quantidade";
+                            dtgItens_ConsultaVenda.Columns[1].Width = 120;
+                            dtgItens_ConsultaVenda.Columns[2].HeaderText = "Valor";
+                            dtgItens_ConsultaVenda.Columns[2].Width = 120;
+                            dtgItens_ConsultaVenda.Columns[3].HeaderText = "Código Venda";
+                            dtgItens_ConsultaVenda.Columns[3].Width = 120;
+                            dtgItens_ConsultaVenda.Columns[4].HeaderText = "Código Produto";
+                            dtgItens_ConsultaVenda.Columns[4].Width = 120;
+                            dtgItens_ConsultaVenda.Columns[5].HeaderText = "Nome do Produto";
+                            dtgItens_ConsultaVenda.Columns[5].Width = 300;
 
-                            dtgItens_ConsultaCom.Columns[0].Visible = false;
-                            dtgItens_ConsultaCom.Columns[4].Visible = false;
+                            dtgItens_ConsultaVenda.Columns[0].Visible = false;
+                            dtgItens_ConsultaVenda.Columns[4].Visible = false;
 
                             break;
                         }
                     case 4:
                         {
-                            dtgParcelas_ConsultaCom.Columns[0].HeaderText = "Parcelas";
-                            dtgParcelas_ConsultaCom.Columns[0].Width = 120;
-                            dtgParcelas_ConsultaCom.Columns[1].HeaderText = "Valor";
-                            dtgParcelas_ConsultaCom.Columns[1].Width = 120;
-                            dtgParcelas_ConsultaCom.Columns[2].HeaderText = "Data de Pagamento";
-                            dtgParcelas_ConsultaCom.Columns[2].Width = 170;
-                            dtgParcelas_ConsultaCom.Columns[3].HeaderText = "Data de Vencimento";
-                            dtgParcelas_ConsultaCom.Columns[3].Width = 170;
-                            dtgParcelas_ConsultaCom.Columns[4].HeaderText = "Código Venda";
-                            dtgParcelas_ConsultaCom.Columns[4].Width = 120;
+                            dtgParcelas_ConsultaVenda.Columns[0].HeaderText = "Código Venda";
+                            dtgParcelas_ConsultaVenda.Columns[0].Width = 120;
+                            dtgParcelas_ConsultaVenda.Columns[1].HeaderText = "Código Parcela Venda";
+                            dtgParcelas_ConsultaVenda.Columns[1].Width = 120;
+                            dtgParcelas_ConsultaVenda.Columns[2].HeaderText = "Valor";
+                            dtgParcelas_ConsultaVenda.Columns[2].Width = 120;
+                            dtgParcelas_ConsultaVenda.Columns[3].HeaderText = "Data de Pagamento";
+                            dtgParcelas_ConsultaVenda.Columns[3].Width = 170;
+                            dtgParcelas_ConsultaVenda.Columns[4].HeaderText = "Data de Vencimento";
+                            dtgParcelas_ConsultaVenda.Columns[4].Width = 170;
 
-                            dtgParcelas_ConsultaCom.Columns[4].Visible = false;
+
+                            dtgParcelas_ConsultaVenda.Columns[0].Visible = false;
+                            dtgParcelas_ConsultaVenda.Columns[1].Visible = false;
 
                             break;
                         }
@@ -172,8 +182,8 @@ namespace GUI
                 lblNome_ConsultaCliente.Text = "Nome do Cliente";
 
                 dtgDados_ConsultaVenda.DataSource = null;
-                dtgItens_ConsultaCom.DataSource = null;
-                dtgParcelas_ConsultaCom.DataSource = null;
+                dtgItens_ConsultaVenda.DataSource = null;
+                dtgParcelas_ConsultaVenda.DataSource = null;
 
                 tbcDados_ConsultaCom.SelectedIndex = 0;
 
@@ -257,7 +267,25 @@ namespace GUI
 
         private void dtgDados_ConsultaVenda_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            try
+            {
+                if(e.RowIndex >= 0)
+                {
+                    DALConexao conexao = new DALConexao(DadosDaConexao.StringDeConexao);
 
+                    BLLItensVenda bllItensVenda = new BLLItensVenda(conexao);
+                    dtgItens_ConsultaVenda.DataSource = bllItensVenda.Localizar(Convert.ToInt32(dtgDados_ConsultaVenda.Rows[e.RowIndex].Cells[0].Value));
+                    this.AtualizaCabecalhoGridVenda(3);
+
+                    BLLParcelasVenda bllParcelasVenda = new BLLParcelasVenda(conexao);
+                    dtgParcelas_ConsultaVenda.DataSource = bllParcelasVenda.Localizar(Convert.ToInt32(dtgDados_ConsultaVenda.Rows[e.RowIndex].Cells[0].Value));
+                    this.AtualizaCabecalhoGridVenda(4);
+                }
+            }
+            catch(Exception)
+            {
+                MessageBox.Show(Validacao.MensagemErro());
+            }
         }
 
 
@@ -274,6 +302,23 @@ namespace GUI
                 dtgDados_ConsultaVenda.DataSource = bllVenda.Localizar(dtIni, dtFim);
 
                 this.AtualizaCabecalhoGridVenda(2);
+            }
+            catch(Exception)
+            {
+                MessageBox.Show(Validacao.MensagemErro());
+            }
+        }
+
+
+        private void dtgDados_ConsultaVenda_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                if(e.RowIndex >= 0)
+                {
+                    this.codigo = Convert.ToInt32(dtgDados_ConsultaVenda.Rows[e.RowIndex].Cells[0].Value);
+                    this.Close();
+                }
             }
             catch(Exception)
             {
