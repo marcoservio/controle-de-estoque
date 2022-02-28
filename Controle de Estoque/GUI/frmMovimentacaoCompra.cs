@@ -42,6 +42,9 @@ namespace GUI
             dgvItensCompra.Rows.Clear();
             dgvParcelas_Compra.Rows.Clear();
             cmbNParcelas_Compra.SelectedIndex = 0;
+            DateTimePicker dt = new DateTimePicker();
+            dt.Value = DateTime.Now;
+            dtpDataCompra_Compra.Value = dt.Value;
         }
 
 

@@ -307,6 +307,7 @@
             this.dtgParcelas_ConsultaCom.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgParcelas_ConsultaCom.Size = new System.Drawing.Size(746, 407);
             this.dtgParcelas_ConsultaCom.TabIndex = 13;
+            this.dtgParcelas_ConsultaCom.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgParcelas_ConsultaCom_CellContentClick);
             // 
             // frmConsultaCompra
             // 

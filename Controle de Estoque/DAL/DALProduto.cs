@@ -87,17 +87,27 @@ namespace DAL
                 MySqlCommand cmd = new MySqlCommand();
                 cmd.Connection = conexao.ObjetoConexao;
                 cmd.CommandText = "UPDATE produto SET pro_nome = ?nome, pro_descricao = ?descricao, pro_valorpago = ?valorpago, pro_valorvenda = ?valorvenda, pro_qtde = ?proqtde, umed_cod = ?umedcod, cat_cod = ?catcod, scat_cod = ?scatcod WHERE pro_cod = ?codigo;";
-                cmd.Parameters.Add(new MySqlParameter("codigo", modelo.Pro_Cod));
-                cmd.Parameters.Add(new MySqlParameter("nome", modelo.Pro_Nome));
-                cmd.Parameters.Add(new MySqlParameter("descricao", modelo.Pro_Descricao));
-                cmd.Parameters.Add(new MySqlParameter("valorpago", modelo.Pro_ValorPago));
-                cmd.Parameters.Add(new MySqlParameter("valorvenda", modelo.Pro_ValorVenda));
-                cmd.Parameters.Add(new MySqlParameter("proqtde", modelo.Pro_Qtde));
-                cmd.Parameters.Add(new MySqlParameter("umedcod", modelo.Umed_Cod));
-                cmd.Parameters.Add(new MySqlParameter("catcod", modelo.Cat_Cod));
-                cmd.Parameters.Add(new MySqlParameter("scatcod", modelo.Scat_Cod));
+                cmd.Parameters.AddWithValue("codigo", modelo.Pro_Cod);
+                cmd.Parameters.AddWithValue("nome", modelo.Pro_Nome);
+                cmd.Parameters.AddWithValue("descricao", modelo.Pro_Descricao);
+                cmd.Parameters.AddWithValue("valorpago", modelo.Pro_ValorPago);
+                cmd.Parameters.AddWithValue("valorvenda", modelo.Pro_ValorVenda);
+                cmd.Parameters.AddWithValue("proqtde", modelo.Pro_Qtde);
+                cmd.Parameters.AddWithValue("umedcod", modelo.Umed_Cod);
+                cmd.Parameters.AddWithValue("catcod", modelo.Cat_Cod);
+                cmd.Parameters.AddWithValue("scatcod", modelo.Scat_Cod);
 
-                cmd.ExecuteNonQuery();
+                if(transacao)
+                {
+                    cmd.Transaction = conexao.ObjetoTransacao;
+                    cmd.ExecuteNonQuery();
+                }
+                else
+                {
+                    conexao.Conectar();
+                    cmd.ExecuteNonQuery();
+                    conexao.Desconectar();
+                }
             }
             catch (Exception ex)
             {
@@ -198,10 +208,18 @@ namespace DAL
 
             try
             {
-                conexao.ObjetoConexao = new MySqlConnection(conexao.StringConexao);
-                string mSQL = "SELECT * FROM produto WHERE pro_cod = ?codigo";
-                MySqlCommand cmd = new MySqlCommand(mSQL, conexao.ObjetoConexao);
-                cmd.Parameters.Add(new MySqlParameter("codigo", codigo));
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.Connection = conexao.ObjetoConexao;
+                cmd.CommandText = "SELECT * FROM produto WHERE pro_cod = " + codigo.ToString();
+
+                if(transacao == false)
+                {
+                    conexao.Conectar();
+                }
+                else
+                {
+                    cmd.Transaction = conexao.ObjetoTransacao;
+                }
 
                 MySqlDataReader registro = cmd.ExecuteReader();
 
@@ -214,15 +232,22 @@ namespace DAL
                     modelo.Pro_Descricao = Convert.ToString(registro["pro_descricao"]);
                     modelo.Pro_ValorPago = Convert.ToDouble(registro["pro_valorpago"]);
                     modelo.Pro_ValorVenda = Convert.ToDouble(registro["pro_valorvenda"]);
-                    modelo.Pro_Qtde = Convert.ToInt32(registro["pro_qtde"].ToString());
+                    modelo.Pro_Qtde = Convert.ToInt32(registro["pro_qtde"]);
                     modelo.Umed_Cod = Convert.ToInt32(registro["umed_cod"]);
                     modelo.Cat_Cod = Convert.ToInt32(registro["cat_cod"]);
                     modelo.Scat_Cod = Convert.ToInt32(registro["scat_cod"]);
                 }
+
+                registro.Close();
             }
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
+            }
+
+            if(transacao == false)
+            {
+                conexao.Desconectar();
             }
 
             return modelo;

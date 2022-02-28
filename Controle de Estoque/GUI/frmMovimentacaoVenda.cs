@@ -38,10 +38,15 @@ namespace GUI
             lblProduto.Text = "Informe o código do fornecedor ou clique em localizar";
             txtQtde.Clear();
             txtValor.Clear();
-            txtTotalVenda.Clear();
+            txtTotalVenda.Text = "0.00";
             dgvItensVenda.Rows.Clear();
             dgvParcelas.Rows.Clear();
+            DateTimePicker dt = new DateTimePicker();
+            dt.Value = DateTime.Now;
+            dtpDataVenda.Value = dt.Value;
             cmbNparcelas.SelectedIndex = 0;
+            cmbTipoPagamento.SelectedIndex = 2;
+            lblMsgVenda.Visible = false;
         }
 
 
@@ -57,7 +62,77 @@ namespace GUI
 
         private void btnLocalizar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                frmConsultaVenda f = new frmConsultaVenda();
 
+                f.ShowDialog();
+
+                if(f.codigo != 0)
+                {
+                    DALConexao conexao = new DALConexao(DadosDaConexao.StringDeConexao);
+                    BLLVenda bll = new BLLVenda(conexao);
+                    ModeloVenda modelo = bll.CarregaModeloVenda(f.codigo);
+
+                    txtVenCod.Text = modelo.VenCod.ToString();
+                    txtNfiscal.Text = modelo.VenNfiscal.ToString();
+                    dtpDataVenda.Value = modelo.VenData;
+                    txtCliCod.Text = modelo.CliCod.ToString();
+                    txtCliCod_Leave(sender, e);
+                    txtTotalVenda.Text = modelo.VenTotal.ToString();
+                    this.totalVenda = modelo.VenTotal;
+                    cmbTipoPagamento.SelectedValue = modelo.TpaCod;
+                    cmbNparcelas.Text = modelo.VenNparcelas.ToString();
+                    if(modelo.VenAvista == 1)
+                    {
+                        chkVenAvista.Checked = true;
+                    }
+                    else
+                    {
+                        chkVenAvista.Checked = false;
+                    }
+
+                    BLLItensVenda bllItens = new BLLItensVenda(conexao);
+                    DataTable tabela = bllItens.Localizar(modelo.VenCod);
+
+                    for(int i = 0; i < tabela.Rows.Count; i++)
+                    {
+                        string icod = tabela.Rows[i]["pro_cod"].ToString();
+                        string inome = tabela.Rows[i]["pro_nome"].ToString();
+                        string iqtde = tabela.Rows[i]["itv_qtde"].ToString();
+                        string ivu = tabela.Rows[i]["itv_valor"].ToString();
+                        double totalLocal = Convert.ToDouble(tabela.Rows[i]["itv_qtde"]) * Convert.ToDouble(tabela.Rows[i]["itv_valor"]);
+
+                        String[] it = new String[] { icod, inome, iqtde, ivu, totalLocal.ToString() };
+
+                        this.dgvItensVenda.Rows.Add(it);
+                    }
+
+                    this.AlteraBotoes(3);
+                    btnAlterar.Enabled = false;
+                    cmbTipoPagamento.SelectedIndex = modelo.TpaCod - 1;
+                    lblMsgVenda.Visible = false;
+
+                    //0 - Venda Ativa / 1 - Venda Inativa
+                    if(modelo.VenStatus != 0)
+                    {
+                        lblMsgVenda.BackColor = Color.Red;
+                        lblMsgVenda.Visible = true;
+                        btnExcluir.Enabled = false;
+                    }
+                }
+                else
+                {
+                    this.LimpaTela();
+                    this.AlteraBotoes(1);
+                }
+
+                f.Dispose();
+            }
+            catch(Exception)
+            {
+                MessageBox.Show(Validacao.MensagemErro());
+            }
         }
 
 
@@ -69,13 +144,13 @@ namespace GUI
 
                 f.ShowDialog();
 
-                if (f.codigo != 0)
+                if(f.codigo != 0)
                 {
                     txtCliCod.Text = f.codigo.ToString();
                     txtCliCod_Leave(sender, e);
                 }
             }
-            catch (Exception)
+            catch(Exception)
             {
                 MessageBox.Show(Validacao.MensagemErro());
             }
@@ -90,7 +165,7 @@ namespace GUI
                 BLLCliente bll = new BLLCliente(conexao);
                 ModeloCliente modelo = bll.CarregaModeloCliente(Convert.ToInt32(txtCliCod.Text));
 
-                if (modelo.CliCod <= 0)
+                if(modelo.CliCod <= 0)
                 {
                     txtCliCod.Clear();
                     lblCliente.Text = "Informe o código do cliente ou clique em localizar";
@@ -100,7 +175,7 @@ namespace GUI
                     lblCliente.Text = modelo.CliNome;
                 }
             }
-            catch (Exception)
+            catch(Exception)
             {
                 txtCliCod.Clear();
                 lblCliente.Text = "Informe o código do cliente ou clique em localizar";
@@ -117,13 +192,13 @@ namespace GUI
 
                 f.ShowDialog();
 
-                if (f.codigo != 0)
+                if(f.codigo != 0)
                 {
                     txtProcod.Text = f.codigo.ToString();
                     txtProcod_Leave(sender, e);
                 }
             }
-            catch (Exception)
+            catch(Exception)
             {
                 MessageBox.Show(Validacao.MensagemErro());
             }
@@ -138,7 +213,7 @@ namespace GUI
                 BLLProduto bll = new BLLProduto(conexao);
                 ModeloProduto modelo = bll.CarregaModeloProduto(Convert.ToInt32(txtProcod.Text));
 
-                if (modelo.Pro_Cod <= 0)
+                if(modelo.Pro_Cod <= 0)
                 {
                     txtProcod.Clear();
                     lblProduto.Text = "Informe o código do produto ou clique em localizar";
@@ -151,7 +226,7 @@ namespace GUI
                 txtQtde.Text = "1";
                 txtValor.Text = modelo.Pro_ValorVenda.ToString();
             }
-            catch (Exception)
+            catch(Exception)
             {
                 txtProcod.Clear();
                 lblProduto.Text = "Informe o código do produto ou clique em localizar";
@@ -164,7 +239,7 @@ namespace GUI
         {
             try
             {
-                if ((txtProcod.Text != "") && (txtQtde.Text != "") && (txtValor.Text != ""))
+                if((txtProcod.Text != "") && (txtQtde.Text != "") && (txtValor.Text != ""))
                 {
                     double totalLocal = Convert.ToDouble(txtQtde.Text) * Convert.ToDouble(txtValor.Text);
                     this.totalVenda = this.totalVenda + totalLocal;
@@ -179,7 +254,7 @@ namespace GUI
                     txtTotalVenda.Text = this.totalVenda.ToString();
                 }
             }
-            catch (Exception)
+            catch(Exception)
             {
                 MessageBox.Show(Validacao.MensagemErro());
             }
@@ -202,7 +277,7 @@ namespace GUI
                 cmbTipoPagamento.ValueMember = "tpa_cod";
                 cmbTipoPagamento.SelectedIndex = 2;
             }
-            catch (Exception)
+            catch(Exception)
             {
                 MessageBox.Show(Validacao.MensagemErro());
             }
@@ -213,7 +288,7 @@ namespace GUI
         {
             try
             {
-                if (chkVenAvista.Checked)
+                if(chkVenAvista.Checked)
                 {
                     cmbNparcelas.SelectedIndex = 0;
                     cmbNparcelas.Enabled = false;
@@ -224,33 +299,7 @@ namespace GUI
                     cmbNparcelas.Enabled = true;
                 }
             }
-            catch (Exception)
-            {
-                MessageBox.Show(Validacao.MensagemErro());
-            }
-        }
-
-
-        private void dgvItensCompra_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            try
-            {
-                if (e.RowIndex >= 0)
-                {
-                    txtProcod.Text = dgvItensVenda.Rows[e.RowIndex].Cells[0].Value.ToString();
-                    lblProduto.Text = dgvItensVenda.Rows[e.RowIndex].Cells[1].Value.ToString();
-                    txtQtde.Text = dgvItensVenda.Rows[e.RowIndex].Cells[2].Value.ToString();
-                    txtValor.Text = dgvItensVenda.Rows[e.RowIndex].Cells[3].Value.ToString();
-                    double valor = Convert.ToDouble(dgvItensVenda.Rows[e.RowIndex].Cells[4].Value);
-
-                    this.totalVenda = totalVenda - valor;
-
-                    dgvItensVenda.Rows.RemoveAt(e.RowIndex);
-
-                    txtTotalVenda.Text = this.totalVenda.ToString();
-                }
-            }
-            catch (Exception)
+            catch(Exception)
             {
                 MessageBox.Show(Validacao.MensagemErro());
             }
@@ -261,6 +310,19 @@ namespace GUI
         {
             try
             {
+                if(Convert.ToInt32(txtCliCod.Text) <= 0)
+                {
+                    throw new Exception();
+                }
+                if(Convert.ToInt32(txtNfiscal.Text) <= 0)
+                {
+                    throw new Exception();
+                }
+                if(totalVenda <= 0)
+                {
+                    throw new Exception();
+                }
+
                 dgvParcelas.Rows.Clear();
 
                 int parcelas = Convert.ToInt32(cmbNparcelas.Text);
@@ -277,15 +339,15 @@ namespace GUI
 
                 int dia = 0;
 
-                for (int i = 1; i <= parcelas; i++)
+                for(int i = 1; i <= parcelas; i++)
                 {
                     string[] k = new string[] { i.ToString(), valor.ToString(), dt.Date.ToString() };
 
                     this.dgvParcelas.Rows.Add(k);
 
-                    if (dt.Month != 12)
+                    if(dt.Month != 12)
                     {
-                        if (dt.Month + 1 == 2)
+                        if(dt.Month + 1 == 2)
                         {
                             dia = dt.Day;
 
@@ -295,7 +357,7 @@ namespace GUI
                         {
                             dia = dt.Day;
 
-                            if (dia == 31)
+                            if(dia == 31)
                             {
                                 dt = new DateTime(dt.Year, dt.Month + 1, dia - 1);
                             }
@@ -313,8 +375,8 @@ namespace GUI
 
                 pnlFinalizaCompra.Visible = true;
             }
-            catch (Exception)
-            { 
+            catch(Exception)
+            {
                 MessageBox.Show(Validacao.MensagemErro());
             }
         }
@@ -337,14 +399,14 @@ namespace GUI
 
                 ModeloVenda modeloVenda = new ModeloVenda();
 
-                modeloVenda.VenData = dtpDataCompra.Value;
+                modeloVenda.VenData = dtpDataVenda.Value;
                 modeloVenda.VenNfiscal = Convert.ToInt32(txtNfiscal.Text);
                 modeloVenda.VenNparcelas = Convert.ToInt32(cmbNparcelas.Text);
                 modeloVenda.VenStatus = 0;
                 modeloVenda.VenTotal = Convert.ToDouble(txtTotalVenda.Text);
                 modeloVenda.CliCod = Convert.ToInt32(txtCliCod.Text);
                 modeloVenda.TpaCod = Convert.ToInt32(cmbTipoPagamento.SelectedValue);
-                if (chkVenAvista.Checked)
+                if(chkVenAvista.Checked)
                 {
                     modeloVenda.VenAvista = 0;
                 }
@@ -383,40 +445,7 @@ namespace GUI
                         bllParcelas.Incluir(modeloParcelas);
                     }
 
-                    MessageBox.Show("Compra efetuada com sucesso!");
-                }
-                else
-                {
-                    //modelo.ComCod = Convert.ToInt32(txtComCod.Text);
-
-                    //bll.Alterar(modelo);
-
-                    //bllItens.ExcluirTodosItens(modelo.ComCod);
-
-                    //for (int i = 0; i < dgvItensCompra.RowCount; i++)
-                    //{
-                    //    modeloItens.ItcCod = i + 1;
-                    //    modeloItens.ComCod = modelo.ComCod;
-                    //    modeloItens.ProCod = Convert.ToInt32(dgvItensCompra.Rows[i].Cells[0].Value);
-                    //    modeloItens.ItcQtde = Convert.ToInt32(dgvItensCompra.Rows[i].Cells[2].Value);
-                    //    modeloItens.ItcValor = Convert.ToDouble(dgvItensCompra.Rows[i].Cells[3].Value);
-
-                    //    bllItens.Incluir(modeloItens);
-                    //}
-
-                    //bllParcelas.ExcluirTodasParcelas(modelo.ComCod);
-
-                    //for (int i = 0; i < dgvParcelas.RowCount; i++)
-                    //{
-                    //    modeloParcelas.ComCod = modelo.ComCod;
-                    //    modeloParcelas.PcoCod = Convert.ToInt32(dgvParcelas.Rows[i].Cells[0].Value);
-                    //    modeloParcelas.PcoValor = Convert.ToDouble(dgvParcelas.Rows[i].Cells[1].Value);
-                    //    modeloParcelas.PcoDataVecto = Convert.ToDateTime(dgvParcelas.Rows[i].Cells[2].Value);
-
-                    //    bllParcelas.Incluir(modeloParcelas);
-                    //}
-
-                    //MessageBox.Show("Cadastro alterado com sucesso!");
+                    MessageBox.Show("Venda efetuada com sucesso!");
                 }
 
                 this.LimpaTela();
@@ -426,7 +455,7 @@ namespace GUI
 
                 conexao.TerminarTransacao();
             }
-            catch (Exception)
+            catch(Exception)
             {
                 conexao.CancelarTransacao();
                 conexao.Desconectar();
@@ -441,13 +470,42 @@ namespace GUI
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-
+            this.LimpaTela();
+            this.AlteraBotoes(1);
+            this.totalVenda = 0;
         }
 
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
+            //Cancelamento da venda
 
+            try
+            {
+                DialogResult d = MessageBox.Show("Deseja cancelar a venda?", "Aviso", MessageBoxButtons.YesNo);
+
+                if (d.ToString() == "Yes")
+                {
+                    DALConexao conexao = new DALConexao(DadosDaConexao.StringDeConexao);
+                    BLLVenda bll = new BLLVenda(conexao);
+
+                    if(bll.CancelarVenda(Convert.ToInt32(txtVenCod.Text)) == true)
+                    {
+                        MessageBox.Show("Venda Cancelada");
+                        this.LimpaTela();
+                        this.AlteraBotoes(1);
+                        this.totalVenda = 0;
+                    }
+                    else
+                    {
+                        throw new Exception();
+                    }
+                }
+            }
+            catch(Exception)
+            {
+                MessageBox.Show(Validacao.MensagemErro());
+            }
         }
 
 
@@ -472,6 +530,32 @@ namespace GUI
         private void btnVoltar_Click(object sender, EventArgs e)
         {
 
+        }
+
+
+        private void dgvItensVenda_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                if(e.RowIndex >= 0)
+                {
+                    txtProcod.Text = dgvItensVenda.Rows[e.RowIndex].Cells[0].Value.ToString();
+                    lblProduto.Text = dgvItensVenda.Rows[e.RowIndex].Cells[1].Value.ToString();
+                    txtQtde.Text = dgvItensVenda.Rows[e.RowIndex].Cells[2].Value.ToString();
+                    txtValor.Text = dgvItensVenda.Rows[e.RowIndex].Cells[3].Value.ToString();
+                    double valor = Convert.ToDouble(dgvItensVenda.Rows[e.RowIndex].Cells[4].Value);
+
+                    this.totalVenda = totalVenda - valor;
+
+                    dgvItensVenda.Rows.RemoveAt(e.RowIndex);
+
+                    txtTotalVenda.Text = this.totalVenda.ToString();
+                }
+            }
+            catch(Exception)
+            {
+                MessageBox.Show(Validacao.MensagemErro());
+            }
         }
     }
 }

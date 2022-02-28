@@ -312,5 +312,10 @@ namespace GUI
                 MessageBox.Show(Validacao.MensagemErro());
             }
         }
+
+        private void dtgParcelas_ConsultaCom_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
