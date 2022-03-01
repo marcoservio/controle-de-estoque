@@ -509,30 +509,6 @@ namespace GUI
         }
 
 
-        private void btnAlterar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void PnlFinalizaCompra_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-
-        private void txtProcod_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void btnVoltar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
         private void dgvItensVenda_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             try
@@ -555,6 +531,22 @@ namespace GUI
             catch(Exception)
             {
                 MessageBox.Show(Validacao.MensagemErro());
+            }
+        }
+
+
+        private void txtNfiscal_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            try
+            {
+                if(!char.IsDigit(e.KeyChar))
+                {
+                    e.Handled = true;
+                }
+            }
+            catch(Exception)
+            {
+                MessageBox.Show(Ferramentas.Validacao.MensagemErro());
             }
         }
     }

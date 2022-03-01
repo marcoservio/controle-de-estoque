@@ -158,6 +158,8 @@ namespace DAL
                     modelo.ComCod = comcod;
                     modelo.ProCod = procod;
                 }
+
+                registro.Close();
             }
             catch (Exception ex)
             {

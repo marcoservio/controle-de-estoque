@@ -206,6 +206,19 @@ namespace GUI
         {
             try
             {
+                if(Convert.ToInt32(txtForCod_Compra.Text) <= 0)
+                {
+                    throw new Exception();
+                }
+                if(Convert.ToInt32(txtNfiscal_Compra.Text) <= 0)
+                {
+                    throw new Exception();
+                }
+                if(totalCompra <= 0)
+                {
+                    throw new Exception();
+                }
+
                 dgvParcelas_Compra.Rows.Clear();
 
                 int parcelas = Convert.ToInt32(cmbNParcelas_Compra.Text);
@@ -542,6 +555,22 @@ namespace GUI
         private void btnVoltar_Click(object sender, EventArgs e)
         {
 
+        }
+
+
+        private void txtNfiscal_Compra_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            try
+            {
+                if(!char.IsDigit(e.KeyChar))
+                {
+                    e.Handled = true;
+                }
+            }
+            catch(Exception)
+            {
+                MessageBox.Show(Ferramentas.Validacao.MensagemErro());
+            }
         }
     }
 }

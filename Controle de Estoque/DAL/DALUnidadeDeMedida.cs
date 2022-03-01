@@ -128,6 +128,8 @@ namespace DAL
                     modelo.UmedCod = Convert.ToInt32(registro["umed_cod"]);
                     modelo.UmedNome = Convert.ToString(registro["umed_nome"]);
                 }
+
+                registro.Close();
             }
             catch (Exception ex)
             {

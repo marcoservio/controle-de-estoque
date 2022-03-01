@@ -166,6 +166,8 @@ namespace DAL
                     modelo.PcoDataVecto = Convert.ToDateTime(registro["pco_datavecto"]);
                     modelo.PcoValor = Convert.ToDouble(registro["pco_valor"]);
                 }
+
+                registro.Close();
             }
             catch (Exception ex)
             {

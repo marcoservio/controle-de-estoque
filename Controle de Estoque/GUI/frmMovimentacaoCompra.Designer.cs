@@ -173,6 +173,7 @@
             this.txtNfiscal_Compra.Name = "txtNfiscal_Compra";
             this.txtNfiscal_Compra.Size = new System.Drawing.Size(304, 20);
             this.txtNfiscal_Compra.TabIndex = 2;
+            this.txtNfiscal_Compra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNfiscal_Compra_KeyPress);
             // 
             // lblNFiscal_Compra
             // 
@@ -496,7 +497,7 @@
             this.pnlFinalizaCompra.Controls.Add(this.lblParcelas_Compra);
             this.pnlFinalizaCompra.Controls.Add(this.lblDadosPagamento_Compra);
             this.pnlFinalizaCompra.Controls.Add(this.dgvParcelas_Compra);
-            this.pnlFinalizaCompra.Location = new System.Drawing.Point(10, 11);
+            this.pnlFinalizaCompra.Location = new System.Drawing.Point(9, 8);
             this.pnlFinalizaCompra.Name = "pnlFinalizaCompra";
             this.pnlFinalizaCompra.Size = new System.Drawing.Size(760, 538);
             this.pnlFinalizaCompra.TabIndex = 36;

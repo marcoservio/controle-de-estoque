@@ -197,6 +197,8 @@ namespace DAL
                     modelo.CliCidade = Convert.ToString(registro["cli_cidade"]);
                     modelo.CliEstado = Convert.ToString(registro["cli_estado"]);
                 }
+
+                registro.Close();
             }
             catch (Exception ex)
             {
@@ -241,6 +243,8 @@ namespace DAL
                     modelo.CliCidade = Convert.ToString(registro["cli_cidade"]);
                     modelo.CliEstado = Convert.ToString(registro["cli_estado"]);
                 }
+
+                registro.Close();
             }
             catch (Exception ex)
             {

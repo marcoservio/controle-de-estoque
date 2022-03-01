@@ -358,6 +358,8 @@ namespace DAL
                     modelo.ForCod = Convert.ToInt32(registro["for_cod"]);
                     modelo.TpaCod = Convert.ToInt32(registro["tpa_cod"]);
                 }
+
+                registro.Close();
             }
             catch (Exception ex)
             {

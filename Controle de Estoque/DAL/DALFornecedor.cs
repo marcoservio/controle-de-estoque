@@ -171,7 +171,7 @@ namespace DAL
                 cmd.CommandText = "SELECT * FROM fornecedor WHERE for_cod = ?codigo";
                 cmd.Parameters.Add(new MySqlParameter("codigo", codigo));
 
-                conexao.Conectar();
+                //conexao.Conectar();
 
                 MySqlDataReader registro = cmd.ExecuteReader();
 
@@ -194,6 +194,8 @@ namespace DAL
                     modelo.ForCidade = Convert.ToString(registro["for_cidade"]);
                     modelo.ForEstado = Convert.ToString(registro["for_estado"]);
                 }
+
+                registro.Close();
             }
             catch (Exception ex)
             {
@@ -237,6 +239,8 @@ namespace DAL
                     modelo.ForCidade = Convert.ToString(registro["for_cidade"]);
                     modelo.ForEstado = Convert.ToString(registro["for_estado"]);
                 }
+
+                registro.Close();
             }
             catch (Exception ex)
             {

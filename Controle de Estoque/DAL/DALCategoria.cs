@@ -129,6 +129,8 @@ namespace DAL
                     modelo.CatCod = Convert.ToInt32(registro["cat_cod"]);
                     modelo.CatNome = Convert.ToString(registro["cat_nome"]);
                 }
+
+                registro.Close();
             }
             catch (Exception ex)
             {

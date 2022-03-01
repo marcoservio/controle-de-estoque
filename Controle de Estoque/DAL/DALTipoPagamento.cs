@@ -128,6 +128,8 @@ namespace DAL
                     modelo.TpaCod = Convert.ToInt32(registro["tpa_cod"]);
                     modelo.TpaNome = Convert.ToString(registro["tpa_nome"]);
                 }
+
+                registro.Close();
             }
             catch (Exception ex)
             {

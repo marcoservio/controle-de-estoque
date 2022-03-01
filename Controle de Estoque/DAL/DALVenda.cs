@@ -430,6 +430,8 @@ namespace DAL
                     modelo.TpaCod = Convert.ToInt32(registro["tpa_cod"]);
                     modelo.VenAvista = Convert.ToInt32(registro["ven_avista"]);
                 }
+
+                registro.Close();
             }
             catch(Exception ex)
             {

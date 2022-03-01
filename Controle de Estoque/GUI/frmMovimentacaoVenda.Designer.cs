@@ -123,12 +123,11 @@
             this.pnlDados.Controls.Add(this.txtNfiscal);
             this.pnlDados.Controls.Add(this.txtVenCod);
             this.pnlDados.Controls.Add(this.label1);
-            this.pnlDados.Location = new System.Drawing.Point(2, 2);
             this.pnlDados.Size = new System.Drawing.Size(780, 445);
             // 
             // pnlBotoes
             // 
-            this.pnlBotoes.Location = new System.Drawing.Point(2, 453);
+            this.pnlBotoes.Location = new System.Drawing.Point(12, 458);
             this.pnlBotoes.Size = new System.Drawing.Size(780, 105);
             // 
             // btnCancelar
@@ -151,7 +150,6 @@
             // 
             this.btnAlterar.Enabled = false;
             this.btnAlterar.Location = new System.Drawing.Point(247, 15);
-            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // btnLocalizar
             // 
@@ -166,7 +164,6 @@
             // btnVoltar
             // 
             this.btnVoltar.Location = new System.Drawing.Point(675, 15);
-            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // label14
             // 
@@ -263,7 +260,6 @@
             this.txtProcod.Name = "txtProcod";
             this.txtProcod.Size = new System.Drawing.Size(121, 23);
             this.txtProcod.TabIndex = 52;
-            this.txtProcod.TextChanged += new System.EventHandler(this.txtProcod_TextChanged);
             this.txtProcod.Leave += new System.EventHandler(this.txtProcod_Leave);
             // 
             // label10
@@ -486,6 +482,7 @@
             this.txtNfiscal.Name = "txtNfiscal";
             this.txtNfiscal.Size = new System.Drawing.Size(349, 20);
             this.txtNfiscal.TabIndex = 33;
+            this.txtNfiscal.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNfiscal_KeyPress);
             // 
             // txtVenCod
             // 
@@ -536,12 +533,11 @@
             this.pnlFinalizaCompra.Controls.Add(this.label17);
             this.pnlFinalizaCompra.Controls.Add(this.label20);
             this.pnlFinalizaCompra.Controls.Add(this.dgvParcelas);
-            this.pnlFinalizaCompra.Location = new System.Drawing.Point(2, 2);
+            this.pnlFinalizaCompra.Location = new System.Drawing.Point(9, 7);
             this.pnlFinalizaCompra.Name = "pnlFinalizaCompra";
             this.pnlFinalizaCompra.Size = new System.Drawing.Size(780, 556);
             this.pnlFinalizaCompra.TabIndex = 37;
             this.pnlFinalizaCompra.Visible = false;
-            this.pnlFinalizaCompra.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlFinalizaCompra_Paint);
             // 
             // label19
             // 
@@ -665,6 +661,7 @@
             // lblMsgVenda
             // 
             this.lblMsgVenda.AutoSize = true;
+            this.lblMsgVenda.Enabled = false;
             this.lblMsgVenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMsgVenda.ForeColor = System.Drawing.Color.Red;
             this.lblMsgVenda.Location = new System.Drawing.Point(172, 269);
@@ -677,14 +674,14 @@
             // frmMovimentacaoVenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(789, 561);
+            this.ClientSize = new System.Drawing.Size(801, 571);
             this.Controls.Add(this.pnlFinalizaCompra);
             this.Name = "frmMovimentacaoVenda";
             this.Text = "Movimentação - Formulario de Venda";
             this.Load += new System.EventHandler(this.frmMovimentacaoVenda_Load);
             this.Controls.SetChildIndex(this.pnlDados, 0);
-            this.Controls.SetChildIndex(this.pnlFinalizaCompra, 0);
             this.Controls.SetChildIndex(this.pnlBotoes, 0);
+            this.Controls.SetChildIndex(this.pnlFinalizaCompra, 0);
             this.pnlDados.ResumeLayout(false);
             this.pnlDados.PerformLayout();
             this.pnlBotoes.ResumeLayout(false);

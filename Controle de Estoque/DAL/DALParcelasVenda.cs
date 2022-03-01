@@ -170,6 +170,8 @@ namespace DAL
                     modelo.PveDataVecto = Convert.ToDateTime(registro["pve_datavecto"]);
                     modelo.PveValor = Convert.ToDouble(registro["pve_valor"]);
                 }
+
+                registro.Close();
             }
             catch (Exception ex)
             {
