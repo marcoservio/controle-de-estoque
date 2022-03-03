@@ -208,7 +208,7 @@
             this.Controls.Add(this.btnLocalizar);
             this.Name = "frmRecebimentoVenda";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmRecebimentoVenda";
+            this.Text = "Recebimento";
             ((System.ComponentModel.ISupportInitialize)(this.dtgParcelas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
