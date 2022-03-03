@@ -358,3 +358,4 @@ C:\Users\marco\OneDrive\git-marcoservio\controle-de-estoque\Controle de Estoque\
 C:\Users\marco\OneDrive\git-marcoservio\controle-de-estoque\Controle de Estoque\GUI\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\marco\OneDrive\git-marcoservio\controle-de-estoque\Controle de Estoque\GUI\obj\Debug\GUI.exe
 C:\Users\marco\OneDrive\git-marcoservio\controle-de-estoque\Controle de Estoque\GUI\obj\Debug\GUI.pdb
+C:\Users\marco\OneDrive\git-marcoservio\controle-de-estoque\Controle de Estoque\GUI\obj\Debug\GUI.frmRecebimentoVenda.resources

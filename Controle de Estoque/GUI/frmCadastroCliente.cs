@@ -26,28 +26,27 @@ namespace GUI
             IE = 7,
         }
 
-
         public void Formatar(Campo valor, TextBox txtTexto)
         {
             try
             {
-                switch (valor)
+                switch(valor)
                 {
                     case Campo.CPF:
                         {
                             txtTexto.MaxLength = 14;
 
-                            if (txtTexto.Text.Length == 3)
+                            if(txtTexto.Text.Length == 3)
                             {
                                 txtTexto.Text = txtTexto.Text + ".";
                                 txtTexto.SelectionStart = txtTexto.Text.Length + 1;
                             }
-                            else if (txtTexto.Text.Length == 7)
+                            else if(txtTexto.Text.Length == 7)
                             {
                                 txtTexto.Text = txtTexto.Text + ".";
                                 txtTexto.SelectionStart = txtTexto.Text.Length + 1;
                             }
-                            else if (txtTexto.Text.Length == 11)
+                            else if(txtTexto.Text.Length == 11)
                             {
                                 txtTexto.Text = txtTexto.Text + "-";
                                 txtTexto.SelectionStart = txtTexto.Text.Length + 1;
@@ -59,17 +58,17 @@ namespace GUI
                         {
                             txtTexto.MaxLength = 18;
 
-                            if (txtTexto.Text.Length == 2 || txtTexto.Text.Length == 6)
+                            if(txtTexto.Text.Length == 2 || txtTexto.Text.Length == 6)
                             {
                                 txtTexto.Text = txtTexto.Text + ".";
                                 txtTexto.SelectionStart = txtTexto.Text.Length + 1;
                             }
-                            else if (txtTexto.Text.Length == 10)
+                            else if(txtTexto.Text.Length == 10)
                             {
                                 txtTexto.Text = txtTexto.Text + "/";
                                 txtTexto.SelectionStart = txtTexto.Text.Length + 1;
                             }
-                            else if (txtTexto.Text.Length == 15)
+                            else if(txtTexto.Text.Length == 15)
                             {
                                 txtTexto.Text = txtTexto.Text + "-";
                                 txtTexto.SelectionStart = txtTexto.Text.Length + 1;
@@ -81,7 +80,7 @@ namespace GUI
                         {
                             txtTexto.MaxLength = 9;
 
-                            if (txtTexto.Text.Length == 5)
+                            if(txtTexto.Text.Length == 5)
                             {
                                 txtTexto.Text = txtTexto.Text + "-";
                                 txtTexto.SelectionStart = txtTexto.Text.Length + 1;
@@ -93,17 +92,17 @@ namespace GUI
                         {
                             txtTexto.MaxLength = 13;
 
-                            if (txtTexto.Text.Length == 0)
+                            if(txtTexto.Text.Length == 0)
                             {
                                 txtTexto.Text = txtTexto.Text + "(";
                                 txtTexto.SelectionStart = txtTexto.Text.Length + 1;
                             }
-                            if (txtTexto.Text.Length == 3)
+                            if(txtTexto.Text.Length == 3)
                             {
                                 txtTexto.Text = txtTexto.Text + ")";
                                 txtTexto.SelectionStart = txtTexto.Text.Length + 1;
                             }
-                            if (txtTexto.Text.Length == 8)
+                            if(txtTexto.Text.Length == 8)
                             {
                                 txtTexto.Text = txtTexto.Text + "-";
                                 txtTexto.SelectionStart = txtTexto.Text.Length + 1;
@@ -115,17 +114,17 @@ namespace GUI
                         {
                             txtTexto.MaxLength = 14;
 
-                            if (txtTexto.Text.Length == 0)
+                            if(txtTexto.Text.Length == 0)
                             {
                                 txtTexto.Text = txtTexto.Text + "(";
                                 txtTexto.SelectionStart = txtTexto.Text.Length + 1;
                             }
-                            if (txtTexto.Text.Length == 3)
+                            if(txtTexto.Text.Length == 3)
                             {
                                 txtTexto.Text = txtTexto.Text + ")";
                                 txtTexto.SelectionStart = txtTexto.Text.Length + 1;
                             }
-                            if (txtTexto.Text.Length == 9)
+                            if(txtTexto.Text.Length == 9)
                             {
                                 txtTexto.Text = txtTexto.Text + "-";
                                 txtTexto.SelectionStart = txtTexto.Text.Length + 1;
@@ -137,12 +136,12 @@ namespace GUI
                         {
                             txtTexto.MaxLength = 10;
 
-                            if (txtTexto.Text.Length == 2)
+                            if(txtTexto.Text.Length == 2)
                             {
                                 txtTexto.Text = txtTexto.Text + ".";
                                 txtTexto.SelectionStart = txtTexto.Text.Length + 1;
                             }
-                            else if (txtTexto.Text.Length == 6)
+                            else if(txtTexto.Text.Length == 6)
                             {
                                 txtTexto.Text = txtTexto.Text + ".";
                                 txtTexto.SelectionStart = txtTexto.Text.Length + 1;
@@ -154,17 +153,17 @@ namespace GUI
                         {
                             txtTexto.MaxLength = 15;
 
-                            if (txtTexto.Text.Length == 3)
+                            if(txtTexto.Text.Length == 3)
                             {
                                 txtTexto.Text = txtTexto.Text + ".";
                                 txtTexto.SelectionStart = txtTexto.Text.Length + 1;
                             }
-                            else if (txtTexto.Text.Length == 7)
+                            else if(txtTexto.Text.Length == 7)
                             {
                                 txtTexto.Text = txtTexto.Text + ".";
                                 txtTexto.SelectionStart = txtTexto.Text.Length + 1;
                             }
-                            else if (txtTexto.Text.Length == 11)
+                            else if(txtTexto.Text.Length == 11)
                             {
                                 txtTexto.Text = txtTexto.Text + ".";
                                 txtTexto.SelectionStart = txtTexto.Text.Length + 1;
@@ -178,7 +177,7 @@ namespace GUI
                         }
                 }
             }
-            catch (Exception)
+            catch(Exception)
             {
                 MessageBox.Show(Validacao.MensagemErro());
             }
@@ -236,7 +235,7 @@ namespace GUI
 
                 f.ShowDialog();
 
-                if (f.codigo != 0)
+                if(f.codigo != 0)
                 {
                     DALConexao conexao = new DALConexao(DadosDaConexao.StringDeConexao);
                     BLLCliente bll = new BLLCliente(conexao);
@@ -255,7 +254,7 @@ namespace GUI
                     txtEmail_Cliente.Text = modelo.CliEmail;
                     txtTelefone_Cliente.Text = modelo.CliFone;
                     txtCelular_Cliente.Text = modelo.CliCel;
-                    if (modelo.CliTipo == 0)
+                    if(modelo.CliTipo == 0)
                     {
                         rdbFisica_Cliente.Checked = true;
                         txtRsocial_Cliente.Text = "";
@@ -276,7 +275,7 @@ namespace GUI
 
                 f.Dispose();
             }
-            catch (Exception)
+            catch(Exception)
             {
                 MessageBox.Show(Validacao.MensagemErro());
             }
@@ -296,7 +295,7 @@ namespace GUI
             {
                 DialogResult d = MessageBox.Show("Deseja excluir o registro?", "Aviso", MessageBoxButtons.YesNo);
 
-                if (d.ToString() == "Yes")
+                if(d.ToString() == "Yes")
                 {
                     DALConexao conexao = new DALConexao(DadosDaConexao.StringDeConexao);
                     BLLCliente bll = new BLLCliente(conexao);
@@ -321,7 +320,7 @@ namespace GUI
         {
             try
             {
-                if (lblEmailIncorreto_Cliente.Visible == false || lblValorIncorreto_Cliente.Visible == false)
+                if(lblEmailIncorreto_Cliente.Visible == false || lblValorIncorreto_Cliente.Visible == false)
                 {
                     ModeloCliente modelo = new ModeloCliente();
 
@@ -337,7 +336,7 @@ namespace GUI
                     modelo.CliEmail = txtEmail_Cliente.Text;
                     modelo.CliFone = txtTelefone_Cliente.Text;
                     modelo.CliCel = txtCelular_Cliente.Text;
-                    if (rdbFisica_Cliente.Checked == true)
+                    if(rdbFisica_Cliente.Checked == true)
                     {
                         modelo.CliTipo = 0;
                         modelo.CliRsocial = "";
@@ -351,7 +350,7 @@ namespace GUI
                     DALConexao conexao = new DALConexao(DadosDaConexao.StringDeConexao);
                     BLLCliente bll = new BLLCliente(conexao);
 
-                    if (this.operacao.Equals("inserir"))
+                    if(this.operacao.Equals("inserir"))
                     {
                         bll.Incluir(modelo);
 
@@ -374,7 +373,7 @@ namespace GUI
                     MessageBox.Show("Erro ao Salvar! Verificar os campos com observações");
                 }
             }
-            catch (Exception)
+            catch(Exception)
             {
                 MessageBox.Show(Validacao.MensagemErro());
             }
@@ -392,7 +391,7 @@ namespace GUI
         {
             try
             {
-                if (rdbFisica_Cliente.Checked == true)
+                if(rdbFisica_Cliente.Checked == true)
                 {
                     lblRsocial_Cliente.Visible = false;
                     txtRsocial_Cliente.Visible = false;
@@ -407,7 +406,7 @@ namespace GUI
                     lblRgie_Cliente.Text = "IE";
                 }
             }
-            catch (Exception)
+            catch(Exception)
             {
                 MessageBox.Show(Validacao.MensagemErro());
             }
@@ -418,7 +417,7 @@ namespace GUI
         {
             try
             {
-                if (Validacao.ValidaCep(txtCep_Cliente.Text) == false)
+                if(Validacao.ValidaCep(txtCep_Cliente.Text) == false)
                 {
                     txtBairro_Cliente.Clear();
                     txtEstado_Cliente.Clear();
@@ -429,7 +428,7 @@ namespace GUI
                 }
                 else
                 {
-                    if (BuscaEndereco.VerificaCEP(txtCep_Cliente.Text) == true)
+                    if(BuscaEndereco.VerificaCEP(txtCep_Cliente.Text) == true)
                     {
                         txtBairro_Cliente.Text = BuscaEndereco.bairro;
                         txtEstado_Cliente.Text = BuscaEndereco.estado;
@@ -438,7 +437,7 @@ namespace GUI
                     }
                 }
             }
-            catch (Exception)
+            catch(Exception)
             {
                 MessageBox.Show(Validacao.MensagemErro());
             }
@@ -451,22 +450,22 @@ namespace GUI
             {
                 lblValorIncorreto_Cliente.Visible = false;
 
-                if (rdbFisica_Cliente.Checked == true)
+                if(rdbFisica_Cliente.Checked == true)
                 {
-                    if (Validacao.IsCpf(txtCpfCnpj_Cliente.Text) == false)
+                    if(Validacao.IsCpf(txtCpfCnpj_Cliente.Text) == false)
                     {
                         lblValorIncorreto_Cliente.Visible = true;
                     }
                 }
                 else
                 {
-                    if (Validacao.IsCnpj(txtCpfCnpj_Cliente.Text) == false)
+                    if(Validacao.IsCnpj(txtCpfCnpj_Cliente.Text) == false)
                     {
                         lblValorIncorreto_Cliente.Visible = true;
                     }
                 }
             }
-            catch (Exception)
+            catch(Exception)
             {
                 MessageBox.Show(Validacao.MensagemErro());
             }
@@ -477,11 +476,11 @@ namespace GUI
         {
             try
             {
-                if (e.KeyChar != (char)8)
+                if(e.KeyChar != (char) 8)
                 {
                     Campo edit = Campo.CPF;
 
-                    if (rdbFisica_Cliente.Checked == false)
+                    if(rdbFisica_Cliente.Checked == false)
                     {
                         edit = Campo.CNPJ;
                     }
@@ -489,7 +488,7 @@ namespace GUI
                     Formatar(edit, txtCpfCnpj_Cliente);
                 }
             }
-            catch (Exception)
+            catch(Exception)
             {
                 MessageBox.Show(Validacao.MensagemErro());
             }
@@ -500,14 +499,14 @@ namespace GUI
         {
             try
             {
-                if (e.KeyChar != (char)8)
+                if(e.KeyChar != (char) 8)
                 {
                     Campo edit = Campo.CEP;
 
                     Formatar(edit, txtCep_Cliente);
                 }
             }
-            catch (Exception)
+            catch(Exception)
             {
                 MessageBox.Show(Validacao.MensagemErro());
             }
@@ -518,14 +517,14 @@ namespace GUI
         {
             try
             {
-                if (e.KeyChar != (char)8)
+                if(e.KeyChar != (char) 8)
                 {
                     Campo edit = Campo.TELEFONE;
 
                     Formatar(edit, txtTelefone_Cliente);
                 }
             }
-            catch (Exception)
+            catch(Exception)
             {
                 MessageBox.Show(Validacao.MensagemErro());
             }
@@ -536,14 +535,14 @@ namespace GUI
         {
             try
             {
-                if (e.KeyChar != (char)8)
+                if(e.KeyChar != (char) 8)
                 {
                     Campo edit = Campo.CELULAR;
 
                     Formatar(edit, txtCelular_Cliente);
                 }
             }
-            catch (Exception)
+            catch(Exception)
             {
                 MessageBox.Show(Validacao.MensagemErro());
             }
@@ -558,12 +557,12 @@ namespace GUI
 
                 lblEmailIncorreto_Cliente.Visible = false;
 
-                if (!Validacao.ValidaEmail(email))
+                if(!Validacao.ValidaEmail(email))
                 {
                     lblEmailIncorreto_Cliente.Visible = true;
                 }
             }
-            catch (Exception)
+            catch(Exception)
             {
                 MessageBox.Show(Validacao.MensagemErro());
             }
@@ -574,11 +573,11 @@ namespace GUI
         {
             try
             {
-                if (e.KeyChar != (char)8)
+                if(e.KeyChar != (char) 8)
                 {
                     Campo edit;
 
-                    if (lblRgie_Cliente.Text == "RG")
+                    if(lblRgie_Cliente.Text == "RG")
                     {
                         edit = Campo.RG;
                     }
@@ -590,7 +589,7 @@ namespace GUI
                     Formatar(edit, txtRgIe_Cliente);
                 }
             }
-            catch (Exception)
+            catch(Exception)
             {
                 MessageBox.Show(Validacao.MensagemErro());
             }

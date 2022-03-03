@@ -180,5 +180,30 @@ namespace DAL
 
             return modelo;
         }
+
+
+        public void EfetuarRecebimento(int venCod, int pveCod, DateTime dtRecebimento)
+        {
+            try
+            {
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.Connection = conexao.ObjetoConexao;
+                cmd.CommandText = "UPDATE parcelasvenda SET pve_datapagto = ?pvedatapagto WHERE pve_cod = ?pvecod AND ven_cod = ?vencod;";
+                cmd.Parameters.Add(new MySqlParameter("pvecod", pveCod));
+                cmd.Parameters.Add(new MySqlParameter("vencod", venCod));
+                cmd.Parameters.Add("pvedatapagto", MySqlDbType.Date);
+                cmd.Parameters["pvedatapagto"].Value = dtRecebimento;
+
+                conexao.Conectar();
+
+                cmd.ExecuteNonQuery();
+
+                conexao.Desconectar();
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

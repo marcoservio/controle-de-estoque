@@ -445,6 +445,7 @@
             this.txtValorUnitario_Compra.Size = new System.Drawing.Size(111, 23);
             this.txtValorUnitario_Compra.TabIndex = 26;
             this.txtValorUnitario_Compra.Text = "0.00";
+            this.txtValorUnitario_Compra.TextChanged += new System.EventHandler(this.txtValorUnitario_Compra_TextChanged);
             // 
             // lblValorUnitario_Compra
             // 
@@ -497,7 +498,7 @@
             this.pnlFinalizaCompra.Controls.Add(this.lblParcelas_Compra);
             this.pnlFinalizaCompra.Controls.Add(this.lblDadosPagamento_Compra);
             this.pnlFinalizaCompra.Controls.Add(this.dgvParcelas_Compra);
-            this.pnlFinalizaCompra.Location = new System.Drawing.Point(9, 8);
+            this.pnlFinalizaCompra.Location = new System.Drawing.Point(9, 11);
             this.pnlFinalizaCompra.Name = "pnlFinalizaCompra";
             this.pnlFinalizaCompra.Size = new System.Drawing.Size(760, 538);
             this.pnlFinalizaCompra.TabIndex = 36;

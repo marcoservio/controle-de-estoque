@@ -173,7 +173,7 @@ namespace DAL
                 cmd.CommandText = "SELECT * FROM cliente WHERE cli_cod = ?codigo";
                 cmd.Parameters.Add(new MySqlParameter("codigo", codigo));
 
-                conexao.Conectar();
+                //conexao.Conectar();
 
                 MySqlDataReader registro = cmd.ExecuteReader();
 
