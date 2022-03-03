@@ -261,5 +261,12 @@ namespace GUI
             venda.ShowDialog();
             venda.Dispose();
         }
+
+        private void recebimentoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRecebimentoVenda venda = new frmRecebimentoVenda();
+            venda.ShowDialog();
+            venda.Dispose();
+        }
     }
 }

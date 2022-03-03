@@ -48,6 +48,37 @@ namespace GUI
         }
 
 
+        public static void Moeda(ref TextBox txt)
+        {
+            string n = string.Empty;
+            double v = 0;
+
+            try
+            {
+                n = txt.Text.Replace(",", "").Replace(",", "");
+                if(n.Equals(""))
+                {
+                    n = "";
+                }
+
+                n = n.PadLeft(3, '0');
+
+                if(n.Length > 3 && n.Substring(0, 1) == "0")
+                {
+                    n = n.Substring(1, n.Length - 1);
+                }
+
+                v = Convert.ToDouble(n) / 100;
+                txt.Text = String.Format("{0:N}", v);
+                txt.SelectionStart = txt.Text.Length;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+
         private void btnInserir_Click(object sender, EventArgs e)
         {
             this.operacao = "inserir";
@@ -354,7 +385,7 @@ namespace GUI
                 }
 
                 txtQuantidade_Compra.Text = "1";
-                txtValorUnitario_Compra.Text = modelo.Pro_ValorVenda.ToString();
+                txtValorUnitario_Compra.Text = Convert.ToString((Decimal) modelo.Pro_ValorVenda);
             }
             catch (Exception)
             {
@@ -571,6 +602,12 @@ namespace GUI
             {
                 MessageBox.Show(Ferramentas.Validacao.MensagemErro());
             }
+        }
+
+
+        private void txtValorUnitario_Compra_TextChanged(object sender, EventArgs e)
+        {
+            //Moeda(ref txtValorUnitario_Compra);
         }
     }
 }

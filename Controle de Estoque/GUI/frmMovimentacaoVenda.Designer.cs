@@ -80,6 +80,7 @@
             this.pcoValor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pcoDataVecto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblMsgVenda = new System.Windows.Forms.Label();
+            this.chkVerificar = new System.Windows.Forms.CheckBox();
             this.pnlDados.SuspendLayout();
             this.pnlBotoes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItensVenda)).BeginInit();
@@ -89,6 +90,7 @@
             // 
             // pnlDados
             // 
+            this.pnlDados.Controls.Add(this.chkVerificar);
             this.pnlDados.Controls.Add(this.lblMsgVenda);
             this.pnlDados.Controls.Add(this.label15);
             this.pnlDados.Controls.Add(this.chkVenAvista);
@@ -123,12 +125,12 @@
             this.pnlDados.Controls.Add(this.txtNfiscal);
             this.pnlDados.Controls.Add(this.txtVenCod);
             this.pnlDados.Controls.Add(this.label1);
-            this.pnlDados.Size = new System.Drawing.Size(780, 445);
+            this.pnlDados.Size = new System.Drawing.Size(780, 457);
             // 
             // pnlBotoes
             // 
-            this.pnlBotoes.Location = new System.Drawing.Point(12, 458);
-            this.pnlBotoes.Size = new System.Drawing.Size(780, 105);
+            this.pnlBotoes.Location = new System.Drawing.Point(12, 472);
+            this.pnlBotoes.Size = new System.Drawing.Size(780, 100);
             // 
             // btnCancelar
             // 
@@ -329,7 +331,7 @@
             this.forQtd,
             this.proUnidade,
             this.proVTotal});
-            this.dgvItensVenda.Location = new System.Drawing.Point(6, 170);
+            this.dgvItensVenda.Location = new System.Drawing.Point(6, 177);
             this.dgvItensVenda.Name = "dgvItensVenda";
             this.dgvItensVenda.ReadOnly = true;
             this.dgvItensVenda.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -372,7 +374,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(292, 400);
+            this.label7.Location = new System.Drawing.Point(286, 416);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(130, 13);
             this.label7.TabIndex = 44;
@@ -380,7 +382,7 @@
             // 
             // dtPDataIni
             // 
-            this.dtPDataIni.Location = new System.Drawing.Point(294, 417);
+            this.dtPDataIni.Location = new System.Drawing.Point(289, 433);
             this.dtPDataIni.Name = "dtPDataIni";
             this.dtPDataIni.Size = new System.Drawing.Size(233, 20);
             this.dtPDataIni.TabIndex = 43;
@@ -388,7 +390,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(3, 400);
+            this.label6.Location = new System.Drawing.Point(4, 416);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(102, 13);
             this.label6.TabIndex = 42;
@@ -409,7 +411,7 @@
             "15",
             "18",
             "24"});
-            this.cmbNparcelas.Location = new System.Drawing.Point(6, 416);
+            this.cmbNparcelas.Location = new System.Drawing.Point(3, 433);
             this.cmbNparcelas.Name = "cmbNparcelas";
             this.cmbNparcelas.Size = new System.Drawing.Size(121, 21);
             this.cmbNparcelas.TabIndex = 41;
@@ -417,7 +419,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(133, 400);
+            this.label5.Location = new System.Drawing.Point(130, 416);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(99, 13);
             this.label5.TabIndex = 40;
@@ -426,7 +428,7 @@
             // cmbTipoPagamento
             // 
             this.cmbTipoPagamento.FormattingEnabled = true;
-            this.cmbTipoPagamento.Location = new System.Drawing.Point(136, 416);
+            this.cmbTipoPagamento.Location = new System.Drawing.Point(133, 433);
             this.cmbTipoPagamento.Name = "cmbTipoPagamento";
             this.cmbTipoPagamento.Size = new System.Drawing.Size(150, 21);
             this.cmbTipoPagamento.TabIndex = 39;
@@ -434,7 +436,7 @@
             // txtTotalVenda
             // 
             this.txtTotalVenda.Enabled = false;
-            this.txtTotalVenda.Location = new System.Drawing.Point(671, 416);
+            this.txtTotalVenda.Location = new System.Drawing.Point(671, 432);
             this.txtTotalVenda.Name = "txtTotalVenda";
             this.txtTotalVenda.Size = new System.Drawing.Size(102, 20);
             this.txtTotalVenda.TabIndex = 38;
@@ -445,11 +447,12 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Red;
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(670, 400);
+            this.label4.Location = new System.Drawing.Point(668, 416);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(31, 13);
             this.label4.TabIndex = 37;
             this.label4.Text = "Total";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -504,7 +507,7 @@
             // chkVenAvista
             // 
             this.chkVenAvista.AutoSize = true;
-            this.chkVenAvista.Location = new System.Drawing.Point(544, 418);
+            this.chkVenAvista.Location = new System.Drawing.Point(548, 435);
             this.chkVenAvista.Name = "chkVenAvista";
             this.chkVenAvista.Size = new System.Drawing.Size(92, 17);
             this.chkVenAvista.TabIndex = 62;
@@ -516,7 +519,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(642, 420);
+            this.label15.Location = new System.Drawing.Point(642, 439);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(23, 13);
             this.label15.TabIndex = 63;
@@ -533,7 +536,7 @@
             this.pnlFinalizaCompra.Controls.Add(this.label17);
             this.pnlFinalizaCompra.Controls.Add(this.label20);
             this.pnlFinalizaCompra.Controls.Add(this.dgvParcelas);
-            this.pnlFinalizaCompra.Location = new System.Drawing.Point(9, 7);
+            this.pnlFinalizaCompra.Location = new System.Drawing.Point(9, 12);
             this.pnlFinalizaCompra.Name = "pnlFinalizaCompra";
             this.pnlFinalizaCompra.Size = new System.Drawing.Size(780, 556);
             this.pnlFinalizaCompra.TabIndex = 37;
@@ -671,10 +674,20 @@
             this.lblMsgVenda.Text = "Venda Cancelada";
             this.lblMsgVenda.Visible = false;
             // 
+            // chkVerificar
+            // 
+            this.chkVerificar.AutoSize = true;
+            this.chkVerificar.Location = new System.Drawing.Point(512, 154);
+            this.chkVerificar.Name = "chkVerificar";
+            this.chkVerificar.Size = new System.Drawing.Size(246, 17);
+            this.chkVerificar.TabIndex = 65;
+            this.chkVerificar.Text = "Verificar a quantidade de produtos em estoque";
+            this.chkVerificar.UseVisualStyleBackColor = true;
+            // 
             // frmMovimentacaoVenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(801, 571);
+            this.ClientSize = new System.Drawing.Size(801, 578);
             this.Controls.Add(this.pnlFinalizaCompra);
             this.Name = "frmMovimentacaoVenda";
             this.Text = "Movimentação - Formulario de Venda";
@@ -747,5 +760,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn pcoValor;
         private System.Windows.Forms.DataGridViewTextBoxColumn pcoDataVecto;
         private System.Windows.Forms.Label lblMsgVenda;
+        private System.Windows.Forms.CheckBox chkVerificar;
     }
 }

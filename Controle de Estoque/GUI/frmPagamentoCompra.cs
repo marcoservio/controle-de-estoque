@@ -34,6 +34,8 @@ namespace GUI
         {
             try
             {
+                btnPagar.Enabled = false;
+
                 frmConsultaCompra f = new frmConsultaCompra();
 
                 f.ShowDialog();

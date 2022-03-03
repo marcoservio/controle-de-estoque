@@ -50,6 +50,35 @@ namespace GUI
         }
 
 
+        private Double VerificaQtdProdutos(int ProCod)
+        {
+            Double qtdeEmEstoque = 0;
+
+            try
+            {
+                DALConexao conexao = new DALConexao(DadosDaConexao.StringDeConexao);
+                BLLProduto bll = new BLLProduto(conexao);
+                ModeloProduto modelo = bll.CarregaModeloProduto(ProCod);
+
+                qtdeEmEstoque = modelo.Pro_Qtde;
+
+                for(int i = 0; i < dgvItensVenda.RowCount; i++)
+                {
+                    if(Convert.ToInt32(dgvItensVenda.Rows[i].Cells[0].Value) == ProCod)
+                    {
+                        qtdeEmEstoque = qtdeEmEstoque - Convert.ToInt32(dgvItensVenda.Rows[i].Cells[2].Value);
+                    }
+                }
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+            return qtdeEmEstoque;
+        }
+
+
         private void btnInserir_Click(object sender, EventArgs e)
         {
             this.operacao = "inserir";
@@ -237,10 +266,23 @@ namespace GUI
 
         private void btnAddProd_Click(object sender, EventArgs e)
         {
+            Double qtfe = 0;
+
             try
             {
                 if((txtProcod.Text != "") && (txtQtde.Text != "") && (txtValor.Text != ""))
                 {
+                    if(chkVerificar.Checked == true)
+                    {
+                        qtfe = VerificaQtdProdutos(Convert.ToInt32(txtProcod.Text));
+
+                        if(Convert.ToDouble(txtQtde.Text) > qtfe)
+                        {
+                            MessageBox.Show("Quantidade de produtos indisponivel.\nVocê possui " + qtfe + " unidades em estoque");
+
+                            return;
+                        }
+                    }
                     double totalLocal = Convert.ToDouble(txtQtde.Text) * Convert.ToDouble(txtValor.Text);
                     this.totalVenda = this.totalVenda + totalLocal;
                     String[] i = new String[] { txtProcod.Text, lblProduto.Text, txtQtde.Text, txtValor.Text, totalLocal.ToString() };
@@ -548,6 +590,11 @@ namespace GUI
             {
                 MessageBox.Show(Ferramentas.Validacao.MensagemErro());
             }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

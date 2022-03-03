@@ -173,5 +173,35 @@ namespace BLL
                 throw new Exception(ex.Message);
             }
         }
+
+
+        public void EfetuarRecebimento(int venCod, int pveCod, DateTime dtRecebimento)
+        {
+            try
+            {
+                if(pveCod <= 0)
+                {
+                    throw new Exception("O código da parcela deve ser informado!");
+                }
+                if(venCod <= 0)
+                {
+                    throw new Exception("O código da compra deve ser informado!");
+                }
+                if(dtRecebimento != null)
+                {
+                    DALParcelasVenda dalObj = new DALParcelasVenda(conexao);
+
+                    dalObj.EfetuarRecebimento(venCod, pveCod, dtRecebimento);
+                }
+                else
+                {
+                    throw new Exception("Data de pagamento obrigatoria");
+                }
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }
